@@ -3,3 +3,29 @@ body{
   margin: auto;
   padding: auto;
 }
+
+.MainBody{
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+  border: 1px solid blue;
+  padding: 20px 20px 20px 20px;
+  line-height: 25px;
+  background-color: #FFF;
+}
+
+.picture{
+  float: right;
+  margin-top: 20px;
+}
+
+.MainBody p {
+  font-family: sans-serif;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.MainBody hr{
+  margin-bottom: 50px;
+}
