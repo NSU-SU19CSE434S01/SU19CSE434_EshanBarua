@@ -2,30 +2,69 @@ body{
   background-color: #ffffff;
   margin: auto;
   padding: auto;
+  font-family: sans-serif;
 }
 
 .MainBody{
   width: 700px;
   margin-left: auto;
   margin-right: auto;
-  font-family: sans-serif;
+  margin-top: auto;
+  margin-bottom: auto;
   border: 1px solid blue;
   padding: 20px 20px 20px 20px;
   line-height: 25px;
-  background-color: #FFF;
+  background-color: ;
 }
 
 .picture{
   float: right;
-  margin-top: 20px;
+  margin-top: 5px;
+  height: inherit;
+  width: inherit;
 }
 
 .MainBody p {
-  font-family: sans-serif;
-  text-align: justify;
   line-height: 30px;
 }
 
 .MainBody hr{
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+}
+
+.h2{
+  text-align: left;
+}
+
+.info{
+  float: left;
+  text-align: left;
+}
+
+.MainBody table{
+  width: 100%;
+}
+
+.MainBody table tr td{
+  padding: 15px 15px;
+  width: 25%;
+  font-size: 15px;
+
+}
+
+.MainBody ol li{
+  list-style-type: disc;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.MBody{
+  padding-top: 500px;
+  padding: 10px;
+  float: left;
+}
+
+.declare{
+  float: left;
+
 }
