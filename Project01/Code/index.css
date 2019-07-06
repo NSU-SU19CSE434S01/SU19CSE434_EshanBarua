@@ -1,7 +1,5 @@
 body{
   background-color: #ffffff;
-  margin: auto;
-  padding: auto;
   font-family: sans-serif;
 }
 
@@ -36,6 +34,9 @@ body{
 .info{
   float: left;
   text-align: left;
+  padding: inherit;
+  margin: inherit;
+  line-height: 5PX;;
 }
 
 .MainBody table{
