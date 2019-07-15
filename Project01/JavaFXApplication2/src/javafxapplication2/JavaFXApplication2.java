@@ -21,22 +21,21 @@ public class JavaFXApplication2 extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-        Button btn = new Button();
-        btn.setText("Print CV");
-        btn.setOnAction(new EventHandler<ActionEvent>() {
+        
+        Button btn = new Button("Build CV");
+        btn.setOnAction(new EventHandler<ActionEvent>(){
             
             @Override
-            public void handle(ActionEvent event) {
-                System.out.println("CV Builder");
+            public void handle(ActionEvent event){
+             System.out.println("Your CV is ready to print");    
             }
-        });
+        
+    });
+        
         
         StackPane root = new StackPane();
         root.getChildren().add(btn);
-        
-        Scene scene = new Scene(root, 300, 250);
-        
-        primaryStage.setTitle("CV Builder");
+        Scene scene = new Scene(root, 500, 300);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
