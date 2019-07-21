@@ -149,6 +149,48 @@ public class JavaFXApplication2 extends Application {
         GridPane.setConstraints(Ugrade, 0, 2);
         grid.getChildren().add(Ugrade);
         
+             //Label for technologies known 
+      Text technologiesLabel = new Text("Technologies Known"); 
+      
+      //check box for technologies known  
+      CheckBox javaCheckBox = new CheckBox("Java"); 
+      javaCheckBox.setIndeterminate(false); 
+      
+      //check box for technologies known  
+      CheckBox CSCheckBox = new CheckBox("C#"); 
+      javaCheckBox.setIndeterminate(false);
+      
+      //check box for technologies known  
+      CheckBox PCheckBox = new CheckBox("Python"); 
+      javaCheckBox.setIndeterminate(false);
+      
+      //check box for technologies known  
+      CheckBox PHPCheckBox = new CheckBox("PHP"); 
+      javaCheckBox.setIndeterminate(false);
+      
+      //check box for technologies known  
+      CheckBox MyCheckBox = new CheckBox("MySQL"); 
+      javaCheckBox.setIndeterminate(false);
+      
+        //check box for technologies known  
+      CheckBox BCheckBox = new CheckBox("BootStrap"); 
+      javaCheckBox.setIndeterminate(false);
+      
+        //check box for technologies known  
+      CheckBox HCheckBox = new CheckBox("HTML/CSS"); 
+      javaCheckBox.setIndeterminate(false);
+      
+      //check box for technologies known  
+      CheckBox dotnetCheckBox = new CheckBox("DotNet"); 
+      javaCheckBox.setIndeterminate(false);
+      
+        //check box for technologies known  
+      CheckBox MCheckBox = new CheckBox("Microsoft Excel"); 
+      javaCheckBox.setIndeterminate(false);
+      
+        //check box for technologies known  
+      CheckBox MOCheckBox = new CheckBox("Microsoft Office"); 
+      javaCheckBox.setIndeterminate(false);
         
           Button button = new Button();
         button.setText("Build CV");
