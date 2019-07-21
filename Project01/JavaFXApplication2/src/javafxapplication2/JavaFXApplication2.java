@@ -5,6 +5,7 @@
  */
 package javafxapplication2;
 
+import java.io.File;
 import java.util.Map;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -29,6 +30,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;  
 import javafx.scene.control.ToggleButton; 
 import javafx.stage.Stage;
+import javafx.stage.DirectoryChooser;
 
 
 /**
@@ -47,7 +49,39 @@ public class JavaFXApplication2 extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         
-          Button button = new Button();
+           //Label for name 
+      Text nameLabel = new Text("Name"); 
+      
+      //Text field for name 
+      TextField nameText = new TextField(); 
+      
+         //Label for Email 
+      Text emailLabel = new Text("Email"); 
+      
+      //Text field for contact 
+      TextField emailText = new TextField(); 
+      
+            //Label for contact 
+      Text contactLabel = new Text("Contact No."); 
+      
+      //Text field for Address 
+      TextField contactText = new TextField(); 
+      
+            //Label for Email 
+      Text addressLabel = new Text("Address"); 
+  
+           //Text field for Address 
+      TextField AddressText = new TextField(); 
+      
+      //File uploder
+      
+      DirectoryChooser dc = new DirectoryChooser();
+File file = dc.showDialog(null);
+if (file != null) {
+            file = new File(file.getAbsolutePath() + "/dafaultFilename.extension");}
+        
+        
+        Button button = new Button();
         button.setText("Build CV");
         button.setOnAction((EventHandler<ActionEvent>) this);
         
