@@ -364,7 +364,43 @@ public class JavaFXApplication2 extends Application {
       // Color of stroke
       title.setStroke(Color.GREEN);          
             
+        
+      // Contact Informations 
       
+      // Contact information Text Title Here
+      contactinfo.setText("Contact Information :");  
+      
+      //Position of the contact information text
+      contactinfo.setX(15);                 
+      contactinfo.setY(75);
+      
+      //Font Settings for Text Title 
+      contactinfo.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));
+      
+      //  Stroke size 
+      contactinfo.setStrokeWidth(1);      
+      // Underline 
+      contactinfo.setUnderline(true);  
+           
+      // Name 
+      
+      // Name Text
+      name.setText("Name :");  
+      
+      //Position of the name text 
+      name.setX(30);         
+      name.setY(116);
+      
+      //Font Settings for Name Text  
+      name.setFont(Font.font("Arial",FontPosture.REGULAR,14));
+               
+      
+      // Input Field For Name
+      
+      // Position setup for Name Input Field
+      nameField.setLayoutX(180); 
+      nameField.setLayoutY(100);
+            
             
     }
     
