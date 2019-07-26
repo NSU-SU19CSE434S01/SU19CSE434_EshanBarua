@@ -225,7 +225,53 @@ public class JavaFXApplication2 extends Application {
        // Text Object for Languages 2
       Text Languages2  = new Text();  
       // Input Field Object Created for Languages 2 
-      TextField Languages2Field = new TextField();        
+      TextField Languages2Field = new TextField();   
+      
+      // Text Object for Skills
+      Text Skills  = new Text();                          
+      // Text Object for Skills 1
+      Text Skills1  = new Text();   
+      // Input Field Object Created for Skills 1
+      TextField Skills1Field = new TextField();          
+      
+      
+      // Text Object for Skills 2
+      Text Skills2  = new Text();    
+       // Input Field Object Created for Skills 2
+      TextField Skills2Field = new TextField();       
+      
+      
+      // Text Object for curriculum activities
+      Text curriculum_act = new Text();       
+      // Input field for curriculum activities
+      TextField curriculum_activitiesInput = new TextField();  
+      
+      //Text object for certification
+      Text Certifications   = new Text();
+      //input field for certification
+      TextField CertificationsField  = new TextField(); 
+      
+      
+      Text Recommendations   = new Text();  
+      //Text field for recommendations
+      Text Rec_Name   = new Text();  
+      //input field for recommendations
+      TextField Rec_NameField  = new TextField(); 
+      
+      //Text field for recommendation designation
+      Text Rec_Designation   = new Text();  
+      //input field for recommendation designation
+      TextField Rec_DesignationField  = new TextField(); 
+      
+      //Text field for recommendation institution
+      Text Rec_Institution   = new Text();
+      //input field for recommendation institution
+      TextField Rec_InstitutionField  = new TextField(); 
+      
+      //Text field for recommendation email
+      Text Rec_Email   = new Text(); 
+      //input field for recommendation email
+      TextField Rec_EmailField  = new TextField(); 
       
       
       
