@@ -8,7 +8,6 @@ package javafxapplication2;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Application;
@@ -17,6 +16,7 @@ import javafx.event.EventHandler;
 import javafx.collections.FXCollections; 
 import javafx.embed.swing.SwingFXUtils;
 import javafx.geometry.Insets; 
+import javafx.scene.Group;
 import javafx.scene.Scene; 
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox; 
@@ -31,6 +31,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 import javax.imageio.ImageIO;
 
 
@@ -75,6 +76,11 @@ public class JavaFXApplication2 extends Application {
       Text caddress = new Text();       
       // Input Field Object created for Current Address 
       TextField caddressField = new TextField();      
+      
+       // Text Object for Contact Number created
+       Text contact = new Text();                    
+      // Input Field Object created for Contact Numbe
+       TextField contactField = new TextField();     
       
       // Text Object for Career Objective created
       Text careerinfo = new Text();  
@@ -285,6 +291,7 @@ public class JavaFXApplication2 extends Application {
       PhotoBox.getChildren().addAll(btnImageLoad, PhotoView);
       
            btnImageLoad.setOnAction(new EventHandler<ActionEvent>() {
+            private Window stage;
 
             @Override
             public void handle(ActionEvent photo_upload) {
@@ -297,8 +304,6 @@ public class JavaFXApplication2 extends Application {
                 photoChooser.getExtensionFilters().addAll(extnFilterJPG,extnFilterPNG,extnFilterGIF);
                 
                 File Photofile = photoChooser.showOpenDialog(stage);
-                
-                
                 
                 try
                 {
@@ -314,39 +319,34 @@ public class JavaFXApplication2 extends Application {
                 }
             }
         });
-          
-          
-      
-        
-        GridPane layout = new GridPane();
-        //Creating a GridPane container
-GridPane grid = new GridPane();
-grid.setPadding(new Insets(10, 10, 10, 10));
-grid.setVgap(5);
-grid.setHgap(5);
-        layout.getChildren().addAll(button,button2);
-        Scene scene = new Scene(layout, 800, 400);
-        primaryStage.setTitle("CV Builder");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+           
+           
+      //Creating group object
+      Group form_gui;   
+        form_gui = new Group(title, contactinfo, name,nameField ,caddress,
+                caddressField,contact,contactField,email,emailField,careerinfo,
+                careerInput,btnImageLoad,PhotoView,PhotoBox,personalinfo,faname,
+                fanameField,motname,motnameField,perAddress,perAddressField,dobText,
+                dobhBox,nationality,nationalityField,gender,genderbox,religion,
+                religionField,blood,bloodbox,marital_Status,marital_Statusbox,
+                educationalinfo,degreename,degreename1Field,degreename2Field,
+                degreename3Field,institutionname,institutionname1Field,institutionname2Field,
+                institutionname3Field,Boardnname,Boardnname1Field,Boardnname2Field,Boardnname3Field,
+                group_sub,group_sub1Field,group_sub2Field,
+                group_sub3Field,resultinfo,result1Field,result2Field,
+                result3Field,pyear,pyear1Field,pyear2Field,pyear3Field,
+                working_exp,organization,organizationField,duration,
+                durationField,Designation,DesignationField,Languages,Languages1,
+                Languages2,Languages1Field,Languages2Field,Skills,Skills1,Skills1Field,
+                Skills2,Skills2Field,curriculum_act,curriculum_activitiesInput,
+                Certifications,CertificationsField,Recommendations,Rec_Name ,Rec_NameField,
+                Rec_Designation,Rec_DesignationField,Rec_Institution,Rec_InstitutionField,
+                Rec_Email ,Rec_EmailField,submit
+                
+        );
+           
+    }
+}
 
-    }    
-            void handle(ActionEvent event, Object button2){
-          Object button = null;
-                if(event.getSource()==button){
-                    System.out.println("Here's your CV");
-                } 
-                if(event.getSource()== button2) {
-                    System.out.println("Thanks for using the system");
-              
-            }   
-    }
-
-    private void setPromptText(String enter_your_last_name) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-        
-   
-    }
 
  
