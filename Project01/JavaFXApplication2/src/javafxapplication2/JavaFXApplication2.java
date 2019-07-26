@@ -55,8 +55,6 @@ public class JavaFXApplication2 extends Application {
     
     @Override
     public void start(Stage primaryStage) throws Exception {
-        
-<<<<<<< HEAD
 
         //Text object Created for Title here
         Text title = new Text();                      
@@ -65,18 +63,16 @@ public class JavaFXApplication2 extends Application {
         Text name = new Text();  
         
         // Input Field Object created for Name 
-      TextField nameField = new TextField();        
+      TextField nameField = new TextField();    
+      
+    // Text Object for Contact Information created  
+      Text contactinfo = new Text();              
       
       // Text Object for Contact email created
        Text email = new Text();  
        // Input Field Object created for email
       TextField emailField = new TextField();      
-             
-         
-      // Text Object for Contact Number created
-        Text contact = new Text();                 
-    // Input Field Object created for Contact Number     
-      TextField contactField = new TextField();           
+                       
       
        // Text Object for Current Address created
       Text caddress = new Text();       
@@ -84,58 +80,66 @@ public class JavaFXApplication2 extends Application {
       TextField caddressField = new TextField();      
       
       // Text Object for Career Objective created
-      Text careerinfo = new Text();               
-
+      Text careerinfo = new Text();  
+      // Multiline Text Input Box for Career Objective
+      TextArea careerObjective = new TextArea();  
+      VBox careerInput = new VBox(careerObjective);  
       
-      //File uploder
+      // Text Object for Personal Information created
+       Text personalinfo = new Text();                
       
-      DirectoryChooser dc = new DirectoryChooser();
-File file = dc.showDialog(null);
-if (file != null) {
-            file = new File(file.getAbsolutePath() + "/dafaultFilename.extension");}
-        
-        
-        //Defining the School's Name text field
-=======
-      //Label for name 
-      Text nameLabel = new Text("Name"); 
+        // Text Object for Father's Name created
+       Text faname = new Text();        
+        // Input Field Object created for Father's Name 
+      TextField fanameField = new TextField();       
       
-      //Text field for name 
-      TextField nameText = new TextField(); 
+        // Text Object for Mother’s Name created  
       
-         //Label for Email 
-      Text emailLabel = new Text("Email"); 
+       Text motname = new Text();        
+       // Input Field Object created for Mother’s Name
+      TextField motnameField = new TextField();       
       
-      //Text field for Email 
-      TextField emailText = new TextField(); 
+      // Text Object for Permanent Address created
+      Text perAddress = new Text();     
+      // Input Field Object created for Permanent Address
+      TextField perAddressField = new TextField();     
       
-            //Label for contact 
-      Text contactLabel = new Text("Contact No."); 
+       // Text Object for DOB created 
+      Text dobText = new Text();    
+      // Date Picker Object Created for DOB 
+      DatePicker dobPicker = new DatePicker();  
+      // Box created for DOB
+      HBox dobhBox = new HBox(dobPicker);         
       
-      //Text field for contact 
-      TextField contactText = new TextField(); 
+       // Text Object for Nationality created
+      Text nationality = new Text();      
+      // Input Field Object created for Nationality 
+      TextField nationalityField = new TextField();        
       
-            //Label for Address 
-      Text addressLabel = new Text("Address"); 
+      // Text Object for Gender created
+      Text gender = new Text();                      
+      ChoiceBox genderbox = new ChoiceBox(FXCollections.observableArrayList("Male", "Female", "Others") ); 
+      // Gennder Choice Box Object Created
   
-           //Text field for Address 
-      TextField AddressText = new TextField(); 
+       // Text Object for Religion created
+      Text religion = new Text();     
+      // Input Field Object created for Religion
+      TextField religionField = new TextField(); 
       
-      //File uploder
-      DirectoryChooser dc = new DirectoryChooser();
-        File file = dc.showDialog(null);
-        if (file != null) {
-            file = new File(file.getAbsolutePath() + "/dafaultFilename.extension");}
-        
-         //Label for Carrier 
-      Text carrierLabel = new Text("Name"); 
+        // Text Object for Blood Group created
+      Text blood = new Text();                    
+      ChoiceBox bloodbox = new ChoiceBox(FXCollections.observableArrayList("A+",
+               "A-","B+","B-","O+","O-","AB+","AB-") );  // Blood Group Choice Box Object Created
       
-      //Text field for Carrier 
-      TextField carrierText = new TextField(); 
-      
-        
-         //Defining the School's Name text field
->>>>>>> 7ccc615e570ca2c62ffdf326d4fba94e28461ed8
+       // Text Object for Marital Status created
+      Text marital_Status = new Text();                     
+      ChoiceBox marital_Statusbox = new ChoiceBox(FXCollections.observableArrayList(
+              "Single","Married","Divorced","Widow") );  
+        // Marital Status Choice Box Object Created
+  
+       
+        //Defining the School's Name text field
+
         final TextField Sname = new TextField();
         Sname.setPromptText("Enter your School's name.");
         Sname.setPrefColumnCount(10);
@@ -197,18 +201,17 @@ if (file != null) {
         final TextField Ugrade = new TextField();
         Ugrade.setPrefColumnCount(15);
         Ugrade.setPromptText("Enter your Grade");
-<<<<<<< HEAD
+
         GridPane.setConstraints(Sgrade, 0, 2);
         grid.getChildren().add(Ugrade);
         
         
       //Label for technologies known 
-=======
+
         GridPane.setConstraints(Ugrade, 0, 2);
         grid.getChildren().add(Ugrade);
         
              //Label for technologies known 
->>>>>>> 7ccc615e570ca2c62ffdf326d4fba94e28461ed8
       Text technologiesLabel = new Text("Technologies Known"); 
       
       //check box for technologies known  
@@ -250,13 +253,13 @@ if (file != null) {
         //check box for technologies known  
       CheckBox MOCheckBox = new CheckBox("Microsoft Office"); 
       javaCheckBox.setIndeterminate(false);
-<<<<<<< HEAD
+
             
         Button button = new Button();
-=======
+
         
           Button button = new Button();
->>>>>>> 7ccc615e570ca2c62ffdf326d4fba94e28461ed8
+
         button.setText("Build CV");
         button.setOnAction((EventHandler<ActionEvent>) this);
         
