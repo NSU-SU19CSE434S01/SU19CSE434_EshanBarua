@@ -195,7 +195,37 @@ public class JavaFXApplication2 extends Application {
        TextField pyear2Field = new TextField();    
         // Input Field Object created for Passing year 3
         TextField pyear3Field = new TextField();      
-        
+       
+        // Text Object for Working Experience created
+       Text working_exp   = new Text();                
+      
+       // Text Object for Name of Organization created
+      Text organization = new Text();     
+      // Input Field Object created for Name of Organization
+      TextField organizationField = new TextField();       
+      
+      // Text Object for Duration created
+      Text duration = new Text();           
+      // Input Field Object created for Duration
+      TextField durationField = new TextField();       
+      
+      // Text Object for Designation created
+      Text Designation = new Text(); 
+      // Input Field Object Created for Designation
+      TextField DesignationField = new TextField();       
+      
+      // Text Object for Languages 
+      Text Languages  = new Text();                      
+      
+      // Text Object for Languages 1
+      Text Languages1  = new Text();      
+      // Input Field Object Created for Languages 1 
+      TextField Languages1Field = new TextField();        
+      
+       // Text Object for Languages 2
+      Text Languages2  = new Text();  
+      // Input Field Object Created for Languages 2 
+      TextField Languages2Field = new TextField();        
       
       
       
