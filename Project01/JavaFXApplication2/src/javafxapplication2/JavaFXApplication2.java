@@ -15,14 +15,12 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.collections.FXCollections; 
 import javafx.embed.swing.SwingFXUtils;
-import javafx.geometry.Insets; 
 import javafx.scene.Group;
 import javafx.scene.Scene; 
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox; 
 import javafx.scene.control.DatePicker; 
 import javafx.scene.control.TextArea;
-import javafx.scene.layout.GridPane; 
 import javafx.scene.text.Text; 
 import javafx.scene.control.TextField; 
 import javafx.scene.image.Image;
@@ -43,10 +41,6 @@ public class JavaFXApplication2 extends Application {
     /**
      * @param args the command line arguments
      */
-
-    public static void main(String[] args) {
-        launch(args);
-    }
        
     ImageView PhotoView;
     
@@ -344,7 +338,17 @@ public class JavaFXApplication2 extends Application {
                 Rec_Email ,Rec_EmailField,submit
                 
         );
-           
+        
+        // Scene object Created Here   
+      Scene scene = new Scene(form_gui, 980, 740);            
+      // Set the title for Stage
+      stage.setTitle("Software Quality Assurance Project 01");  
+            
+    }
+    
+    
+    public static void main(String[] args) {
+        launch(args);
     }
 }
 
