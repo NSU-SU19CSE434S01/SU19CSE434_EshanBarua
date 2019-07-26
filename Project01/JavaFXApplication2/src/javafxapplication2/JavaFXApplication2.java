@@ -137,7 +137,68 @@ public class JavaFXApplication2 extends Application {
               "Single","Married","Divorced","Widow") );  
         // Marital Status Choice Box Object Created
   
-       
+      // Text Object for Educational Qualification created
+      Text educationalinfo = new Text();                
+      // Text Object for Name of degree created
+      Text degreename = new Text();                   
+      
+
+        // Input Field Object created for Degree 1
+      TextField degreename1Field = new TextField(); 
+      // Input Field Object created for Degree 2
+       TextField degreename2Field = new TextField();    
+       // Input Field Object created for Degree 3
+        TextField degreename3Field = new TextField();       
+         
+      // Text Object for Institution Name created
+      Text institutionname = new Text();                   
+      // Input Field Object created for Institution 1
+      TextField institutionname1Field = new TextField();  
+      // Input Field Object created for Institution 2
+       TextField institutionname2Field = new TextField();     
+        // Input Field Object created for Institution 3
+        TextField institutionname3Field = new TextField();      
+        
+       // Text Object for Board Name created
+      Text Boardnname = new Text();                  
+      
+      // Input Field Object created for Board 1
+      TextField Boardnname1Field = new TextField(); 
+       // Input Field Object created for Board 2
+       TextField Boardnname2Field = new TextField();    
+       // Input Field Object created for Board 3
+        TextField Boardnname3Field = new TextField();       
+         
+      // Text Object for Group or Subject created
+      Text group_sub = new Text();                      
+      // Input Field Object created for Group/Subject 1
+      TextField group_sub1Field = new TextField(); 
+      // Input Field Object created for Group/Subject 2
+       TextField group_sub2Field = new TextField();  
+        // Input Field Object created for Group/Subject 3
+        TextField group_sub3Field = new TextField();      
+        
+       // Text Object for Result created
+      Text resultinfo = new Text();                     
+      // Input Field Object created for Result 1
+      TextField result1Field = new TextField();   
+      // Input Field Object created for Result 2
+       TextField result2Field = new TextField();    
+        // Input Field Object created for Result 3
+        TextField result3Field = new TextField();      
+         
+        // Text Object for Passing Year created  
+      Text pyear = new Text();                        
+       // Input Field Object created for Passing year 1
+      TextField pyear1Field = new TextField();    
+       // Input Field Object created for Passing year 2
+       TextField pyear2Field = new TextField();    
+        // Input Field Object created for Passing year 3
+        TextField pyear3Field = new TextField();      
+        
+      
+      
+      
         //Defining the School's Name text field
 
         final TextField Sname = new TextField();
