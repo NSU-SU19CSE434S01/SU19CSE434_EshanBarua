@@ -56,6 +56,7 @@ public class JavaFXApplication2 extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         
+<<<<<<< HEAD
 
         //Text object Created for Title here
         Text title = new Text();                      
@@ -95,6 +96,46 @@ if (file != null) {
         
         
         //Defining the School's Name text field
+=======
+      //Label for name 
+      Text nameLabel = new Text("Name"); 
+      
+      //Text field for name 
+      TextField nameText = new TextField(); 
+      
+         //Label for Email 
+      Text emailLabel = new Text("Email"); 
+      
+      //Text field for Email 
+      TextField emailText = new TextField(); 
+      
+            //Label for contact 
+      Text contactLabel = new Text("Contact No."); 
+      
+      //Text field for contact 
+      TextField contactText = new TextField(); 
+      
+            //Label for Address 
+      Text addressLabel = new Text("Address"); 
+  
+           //Text field for Address 
+      TextField AddressText = new TextField(); 
+      
+      //File uploder
+      DirectoryChooser dc = new DirectoryChooser();
+        File file = dc.showDialog(null);
+        if (file != null) {
+            file = new File(file.getAbsolutePath() + "/dafaultFilename.extension");}
+        
+         //Label for Carrier 
+      Text carrierLabel = new Text("Name"); 
+      
+      //Text field for Carrier 
+      TextField carrierText = new TextField(); 
+      
+        
+         //Defining the School's Name text field
+>>>>>>> 7ccc615e570ca2c62ffdf326d4fba94e28461ed8
         final TextField Sname = new TextField();
         Sname.setPromptText("Enter your School's name.");
         Sname.setPrefColumnCount(10);
@@ -156,11 +197,18 @@ if (file != null) {
         final TextField Ugrade = new TextField();
         Ugrade.setPrefColumnCount(15);
         Ugrade.setPromptText("Enter your Grade");
+<<<<<<< HEAD
         GridPane.setConstraints(Sgrade, 0, 2);
         grid.getChildren().add(Ugrade);
         
         
       //Label for technologies known 
+=======
+        GridPane.setConstraints(Ugrade, 0, 2);
+        grid.getChildren().add(Ugrade);
+        
+             //Label for technologies known 
+>>>>>>> 7ccc615e570ca2c62ffdf326d4fba94e28461ed8
       Text technologiesLabel = new Text("Technologies Known"); 
       
       //check box for technologies known  
@@ -202,8 +250,13 @@ if (file != null) {
         //check box for technologies known  
       CheckBox MOCheckBox = new CheckBox("Microsoft Office"); 
       javaCheckBox.setIndeterminate(false);
+<<<<<<< HEAD
             
         Button button = new Button();
+=======
+        
+          Button button = new Button();
+>>>>>>> 7ccc615e570ca2c62ffdf326d4fba94e28461ed8
         button.setText("Build CV");
         button.setOnAction((EventHandler<ActionEvent>) this);
         
