@@ -5,36 +5,33 @@
  */
 package javafxapplication2;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-
 import javafx.collections.FXCollections; 
-import javafx.collections.ObservableList; 
-
+import javafx.embed.swing.SwingFXUtils;
 import javafx.geometry.Insets; 
-import javafx.geometry.Pos; 
-
 import javafx.scene.Scene; 
-import javafx.scene.control.Button; 
-import javafx.scene.control.CheckBox; 
+import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox; 
 import javafx.scene.control.DatePicker; 
-import javafx.scene.control.ListView; 
-import javafx.scene.control.RadioButton; 
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.GridPane; 
 import javafx.scene.text.Text; 
 import javafx.scene.control.TextField; 
-import javafx.scene.control.ToggleGroup;  
-import javafx.scene.control.ToggleButton; 
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import javafx.stage.DirectoryChooser;
+import javax.imageio.ImageIO;
 
 
 /**
@@ -273,8 +270,53 @@ public class JavaFXApplication2 extends Application {
       //input field for recommendation email
       TextField Rec_EmailField  = new TextField(); 
       
+      //  Submission Button
+      Button submit = new Button("Submit Your Information");        
       
-     
+      // Photo Upload Button With Text
+      Button btnImageLoad = new Button("Upload Your Photo Here"); 
+    
+      // Photo View Object Created 
+      PhotoView = new ImageView();                                 
+      
+        // Photo Upload And Control 
+      VBox PhotoBox = new VBox();                                 
+        
+      PhotoBox.getChildren().addAll(btnImageLoad, PhotoView);
+      
+           btnImageLoad.setOnAction(new EventHandler<ActionEvent>() {
+
+            @Override
+            public void handle(ActionEvent photo_upload) {
+                FileChooser photoChooser = new FileChooser();
+                
+                FileChooser.ExtensionFilter extnFilterJPG = new FileChooser.ExtensionFilter("JPG files (*.jpg)", "*.JPG");
+                FileChooser.ExtensionFilter extnFilterPNG = new FileChooser.ExtensionFilter("PNG files (*.png)", "*.PNG");
+                FileChooser.ExtensionFilter extnFilterGIF = new FileChooser.ExtensionFilter("GIF files (*.gif)", "*.GIF");
+                
+                photoChooser.getExtensionFilters().addAll(extnFilterJPG,extnFilterPNG,extnFilterGIF);
+                
+                File Photofile = photoChooser.showOpenDialog(stage);
+                
+                
+                
+                try
+                {
+                    BufferedImage buffImage = ImageIO.read(Photofile);
+                    Image photo_file = SwingFXUtils.toFXImage(buffImage, null);
+                    PhotoView.setImage(photo_file);
+                    
+                }
+                
+                catch (IOException excp)
+                {
+                    Logger.getLogger(JavaFXApplication2.class.getName()).log(Level.SEVERE, null, excp);
+                }
+            }
+        });
+          
+          
+      
         
         GridPane layout = new GridPane();
         //Creating a GridPane container
