@@ -27,6 +27,9 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontPosture;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.stage.Window;
@@ -38,13 +41,9 @@ import javax.imageio.ImageIO;
  * @author Eshan
  */
 public class JavaFXApplication2 extends Application {
-    /**
-     * @param args the command line arguments
-     */
-       
+    
     ImageView PhotoView;
-    
-    
+     
     @Override
     public void start(Stage primaryStage) throws Exception {
 
@@ -285,7 +284,6 @@ public class JavaFXApplication2 extends Application {
       PhotoBox.getChildren().addAll(btnImageLoad, PhotoView);
       
            btnImageLoad.setOnAction(new EventHandler<ActionEvent>() {
-            private Window stage;
 
             @Override
             public void handle(ActionEvent photo_upload) {
@@ -339,14 +337,40 @@ public class JavaFXApplication2 extends Application {
                 
         );
         
-        // Scene object Created Here   
+      // Scene object Created Here   
       Scene scene = new Scene(form_gui, 980, 740);            
       // Set the title for Stage
       stage.setTitle("Software Quality Assurance Project 01");  
+      
+            
+      // Title    - CV Builder
+      
+      // Title Text
+      title.setText("CV BUILDER");  
+      
+      //Position of the text Title
+      title.setX(380);                 
+      title.setY(25);
+      
+      //Font Settings for Text Title 
+      title.setFont(Font.font("Times New Roman",FontPosture.REGULAR,20));
+      
+      //Color Fill inside the text title        
+      title.setFill(Color.BLACK); 
+      
+      //  Stroke size
+      title.setStrokeWidth(2); 
+      
+      // Color of stroke
+      title.setStroke(Color.GREEN);          
+            
+      
             
     }
     
-    
+     /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
         launch(args);
     }
