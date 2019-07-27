@@ -434,7 +434,7 @@ public class JavaFXApplication2 extends Application {
       contactField.setLayoutY(160);
       
        
-        // Email
+       // Email
       
        //email address Text
       email.setText("Email :"); 
@@ -470,7 +470,7 @@ public class JavaFXApplication2 extends Application {
        careerInput.setPrefHeight(60);
         
      
-        // Photo Upload Field With Posiiton
+       // Photo Upload Field With Posiiton
       
        // Photo Upload Field Position
        btnImageLoad.setLayoutX(740);  
@@ -504,6 +504,7 @@ public class JavaFXApplication2 extends Application {
       // Father’s Name 
       // Father’s Name Text
       faname.setText("Father’s Name :"); 
+        
       //Position of the Father’s Name Text 
       faname.setX(395);          
       faname.setY(116);
@@ -516,7 +517,7 @@ public class JavaFXApplication2 extends Application {
       fanameField.setLayoutY(98);
       
      
-       // Mother's Name  
+      // Mother's Name  
       // Mother’s Name Text
       motname.setText("Mother’s Name :");
       //Position of the Mother’s Name Text   
@@ -526,9 +527,58 @@ public class JavaFXApplication2 extends Application {
       motname.setFont(Font.font("Arial",FontPosture.REGULAR,14));
                
       // Input Field for Mother’s Name 
-      
-      motnameField.setLayoutX(520);  // Position Setup for input field
+      // Position Setup for input field
+      motnameField.setLayoutX(520);  
       motnameField.setLayoutY(130);
+        
+      
+      // Permanent Address 
+      // Permanent Address Text
+      perAddress.setText("Permanent Address :"); 
+      
+      //Position of Permanent Address Text  
+      perAddress.setX(395);                   
+      perAddress.setY(176);
+      //Font Settings for Permanent Address  
+      perAddress.setFont(Font.font("Arial",FontPosture.REGULAR,14)); 
+               
+      // Input Field for Permanent Address
+      
+      // Position Setup for Permanent Address Input Field
+      perAddressField.setLayoutX(520);      
+      perAddressField.setLayoutY(160);
+     
+      // Date Of Birth ( DOB )
+      // Date Of Birth Text
+      dobText.setText("Date Of Birth :"); 
+      
+      //Position of Date Of Birth Text   
+      dobText.setX(395);           
+      dobText.setY(206);
+      //Font Settings for Date Of Birth  
+      dobText.setFont(Font.font("Arial",FontPosture.REGULAR,14)); 
+      
+      // DOB Picker Input Box
+      // Position Setup for DOB Picker Input Box  
+      dobhBox.setLayoutX(520);      
+      dobhBox.setLayoutY(190);
+      
+        
+      //  Nationality
+      // Nationality Text
+      nationality.setText("Nationality :");  
+        
+      //Position of Nationality Text  
+      nationality.setX(395);                    
+      nationality.setY(236);
+        
+      //Font Settings for Nationality  
+      nationality.setFont(Font.font("Arial",FontPosture.REGULAR,14));  
+               
+      // Input Field for Nationality
+      // Position Setup for Nationality Input Field
+      nationalityField.setLayoutX(520);       
+      nationalityField.setLayoutY(220);
         
             
     }
