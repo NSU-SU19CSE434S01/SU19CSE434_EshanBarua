@@ -989,6 +989,54 @@ public class JavaFXApplication2 extends Application {
         CertificationsField.setPrefWidth(380);    
         CertificationsField.setPrefHeight(10);
        
+        
+      // Recommendations :
+      
+      Recommendations.setText("Recommendations : ");                
+      
+      //Font Settings
+      Recommendations.setX(670);                             
+      Recommendations.setY(570);
+       
+      Recommendations.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16)); 
+      
+      //  Stroke size  
+      Recommendations.setStrokeWidth(1);                                                
+      Recommendations.setUnderline(true);     
+        
+      Rec_Name.setText("Name ");           
+      Rec_Name.setX(680);                         
+      Rec_Name.setY(600);
+      Rec_Name.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
+               
+      Rec_NameField.setLayoutX(790);              
+      Rec_NameField.setLayoutY(580);  
+      
+      Rec_Designation.setText("Designation ");           
+      Rec_Designation.setX(680);                         
+      Rec_Designation.setY(630);
+      Rec_Designation.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
+               
+      Rec_DesignationField.setLayoutX(790);              
+      Rec_DesignationField.setLayoutY(612);  
+      
+      Rec_Institution.setText("Institution ");           
+      Rec_Institution.setX(680);                         
+      Rec_Institution.setY(660);
+      Rec_Institution.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
+               
+      Rec_InstitutionField.setLayoutX(790);              
+      Rec_InstitutionField.setLayoutY(642);
+      
+      
+      Rec_Email.setText("E-mail ");           
+      Rec_Email.setX(680);                         
+      Rec_Email.setY(690);
+      Rec_Email.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
+               
+      Rec_EmailField.setLayoutX(790);              
+      Rec_EmailField.setLayoutY(672);
+      
        
             
     }
