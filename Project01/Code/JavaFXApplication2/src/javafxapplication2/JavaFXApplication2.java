@@ -400,6 +400,38 @@ public class JavaFXApplication2 extends Application {
       // Position setup for Name Input Field
       nameField.setLayoutX(180); 
       nameField.setLayoutY(100);
+      
+      
+       // Current Address 
+      //Position of the Current Address text 
+      caddress.setText("Current Address :"); 
+      
+       //Position of the name text 
+      caddress.setX(30);           
+      caddress.setY(146);
+      
+      //Font Settings for Current Address Text 
+      caddress.setFont(Font.font("Arial",FontPosture.REGULAR,14));  
+      
+      // Position setup for Current Address Input Field
+      caddressField.setLayoutX(180);  
+      caddressField.setLayoutY(130);
+      
+      // Contact Number 
+      
+      //Contact Number Text
+      contact.setText("Contact Number :"); 
+      
+      //Position of the Contact Number 
+      contact.setX(30);          
+      contact.setY(180);
+      
+      //Font Settings for Contact Number Text 
+      contact.setFont(Font.font("Arial",FontPosture.REGULAR,14));  
+      
+      // Position setup for Contact Number Input Field
+      contactField.setLayoutX(180);  
+      contactField.setLayoutY(160);
             
             
     }
