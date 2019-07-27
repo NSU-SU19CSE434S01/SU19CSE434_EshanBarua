@@ -315,25 +315,25 @@ public class JavaFXApplication2 extends Application {
            
       //Creating group object
       Group form_gui;   
-        form_gui = new Group(title, contactinfo, name,nameField ,caddress,
-                caddressField,contact,contactField,email,emailField,careerinfo,
-                careerInput,btnImageLoad,PhotoView,PhotoBox,personalinfo,faname,
-                fanameField,motname,motnameField,perAddress,perAddressField,dobText,
-                dobhBox,nationality,nationalityField,gender,genderbox,religion,
-                religionField,blood,bloodbox,marital_Status,marital_Statusbox,
-                educationalinfo,degreename,degreename1Field,degreename2Field,
-                degreename3Field,institutionname,institutionname1Field,institutionname2Field,
-                institutionname3Field,Boardnname,Boardnname1Field,Boardnname2Field,Boardnname3Field,
-                group_sub,group_sub1Field,group_sub2Field,
-                group_sub3Field,resultinfo,result1Field,result2Field,
-                result3Field,pyear,pyear1Field,pyear2Field,pyear3Field,
-                working_exp,organization,organizationField,duration,
-                durationField,Designation,DesignationField,Languages,Languages1,
-                Languages2,Languages1Field,Languages2Field,Skills,Skills1,Skills1Field,
-                Skills2,Skills2Field,curriculum_act,curriculum_activitiesInput,
-                Certifications,CertificationsField,Recommendations,Rec_Name ,Rec_NameField,
-                Rec_Designation,Rec_DesignationField,Rec_Institution,Rec_InstitutionField,
-                Rec_Email ,Rec_EmailField,submit
+        form_gui = new Group (title, contactinfo, name, nameField ,caddress,
+                caddressField, contact, contactField, email, emailField, careerinfo,
+                careerInput, btnImageLoad, PhotoView, PhotoBox, personalinfo, faname,
+                fanameField, motname, motnameField, perAddress, perAddressField, dobText,
+                dobhBox, nationality, nationalityField, gender, genderbox, religion,
+                religionField, blood, bloodbox, marital_Status, marital_Statusbox,
+                educationalinfo, degreename, degreename1Field, degreename2Field,
+                degreename3Field, institutionname, institutionname1Field, institutionname2Field,
+                institutionname3Field, Boardnname, Boardnname1Field, Boardnname2Field, Boardnname3Field,
+                group_sub, group_sub1Field, group_sub2Field,
+                group_sub3Field, resultinfo, result1Field, result2Field,
+                result3Field, pyear, pyear1Field, pyear2Field, pyear3Field,
+                working_exp, organization, organizationField, duration,
+                durationField, Designation, DesignationField, Languages, Languages1,
+                Languages2, Languages1Field, Languages2Field, Skills, Skills1, Skills1Field,
+                Skills2, Skills2Field, curriculum_act, curriculum_activitiesInput,
+                Certifications, CertificationsField, Recommendations, Rec_Name , Rec_NameField,
+                Rec_Designation, Rec_DesignationField, Rec_Institution, Rec_InstitutionField,
+                Rec_Email , Rec_EmailField, submit
                 
         );
         
@@ -579,6 +579,65 @@ public class JavaFXApplication2 extends Application {
       // Position Setup for Nationality Input Field
       nationalityField.setLayoutX(520);       
       nationalityField.setLayoutY(220);
+      
+       // Gender Choice Box Text
+      
+      gender.setText("Gender : ");          // Gender Text
+      gender.setX(395);                     //Position of Gender Text 
+      gender.setY(269);
+      gender.setFont(Font.font("Arial",FontPosture.REGULAR,14));  //Font Settings for Gender
+        
+      // Gender Choice Box Position Setup 
+      
+      genderbox.setLayoutX(520);            // Position Setup for Gender Choice Box
+      genderbox.setLayoutY(250);
+          
+      //  Religion
+      // Religion Text
+      religion.setText("Religion :");   
+      
+      // Position of Religion Text   
+      religion.setX(395);                   
+      religion.setY(299);
+      
+      //Font Settings for Religion  
+      religion.setFont(Font.font("Arial",FontPosture.REGULAR,14)); 
+               
+      // Input Field for Religion
+      // Position Setup for Religion Field
+      religionField.setLayoutX(520);        
+      religionField.setLayoutY(280);
+      
+      // Blood Group Choice Box Text
+      // Blood Group Text
+      blood.setText("Blood Group : ");  
+     
+      //Position of Blood Group Text   
+      blood.setX(395);                           
+      blood.setY(329);
+      //Font Settings for Blood Group  
+      blood.setFont(Font.font("Arial",FontPosture.REGULAR,14));  
+        
+      // Blood Group Choice Box Position Setup 
+      // Position Setup for Blood Group Choice Box
+      bloodbox.setLayoutX(520);                
+      bloodbox.setLayoutY(310); 
+        
+      
+      // Marital Status 
+      // Marital Status Text
+      marital_Status.setText("Marital Status : ");  
+      
+      //Position of Marital Status Text   
+      marital_Status.setX(395);                              
+      marital_Status.setY(359);
+      //Font Settings for Marital Status  
+      marital_Status.setFont(Font.font("Arial",FontPosture.REGULAR,14));  
+      
+      // Marital Status Choice Box Position Setup 
+      // Position Setup for Marital Status Choice Box
+      marital_Statusbox.setLayoutX(520);                
+      marital_Statusbox.setLayoutY(340);
         
             
     }
