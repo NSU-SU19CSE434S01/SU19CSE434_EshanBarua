@@ -894,7 +894,69 @@ public class JavaFXApplication2 extends Application {
       DesignationField.setLayoutX(740);              
       DesignationField.setLayoutY(520);  
       
+     // Languages 
+      // Languages Text Title Here
+      Languages.setText("Languages : ");            
+     
+      //Position of The Languages Text   
+      Languages.setX(15);                          
+      Languages.setY(570);
+        
+      //Font Settings    
+      Languages.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));   
       
+      //  Stroke size   
+      Languages.setStrokeWidth(1);                
+      Languages.setUnderline(true);     
+        
+      Languages1.setText("Language 1 ");           
+      Languages1.setX(180);                         
+      Languages1.setY(575);
+      Languages1.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
+               
+      Languages1Field.setLayoutX(265);              
+      Languages1Field.setLayoutY(560);  
+      
+      Languages2.setText("Language 2 ");           
+      Languages2.setX(420);                         
+      Languages2.setY(575);
+      Languages2.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
+               
+      Languages2Field.setLayoutX(500);              
+      Languages2Field.setLayoutY(560);  
+      
+      
+      
+       // Skills
+       // Skills Text Title Here
+      Skills.setText("Skills : ");                
+     
+      //Position of The Skills Text   
+      Skills.setX(15);                             
+      Skills.setY(610);
+      
+       //Font Settings  
+      Skills.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));    
+      
+       //  Stroke size   
+      Skills.setStrokeWidth(1);               
+      Skills.setUnderline(true);     
+        
+      Skills1.setText("Skill 1 ");           
+      Skills1.setX(180);                         
+      Skills1.setY(610);
+      Skills1.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
+               
+      Skills1Field.setLayoutX(265);              
+      Skills1Field.setLayoutY(595);  
+      
+      Skills2.setText("Skill 2 ");           
+      Skills2.setX(420);                         
+      Skills2.setY(610);
+      Skills2.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
+               
+      Skills2Field.setLayoutX(500);              
+      Skills2Field.setLayoutY(595);   
             
     }
     
