@@ -432,6 +432,42 @@ public class JavaFXApplication2 extends Application {
       // Position setup for Contact Number Input Field
       contactField.setLayoutX(180);  
       contactField.setLayoutY(160);
+      
+       
+        // Email
+      
+       //email address Text
+      email.setText("Email :"); 
+      //Position of the email 
+      email.setX(30);            
+      email.setY(210);
+      //Font Settings for email Text  
+      email.setFont(Font.font("Arial",FontPosture.REGULAR,14));
+      
+      // Position setup for email Number Input Field
+      emailField.setLayoutX(180);  
+      emailField.setLayoutY(190);
+      
+      
+        // Career Objective 
+       // Career Objective Text Title Here 
+       careerinfo.setText("Career Objective :");  
+       //Position of the Career Objective Text 
+       careerinfo.setX(15);                 
+       careerinfo.setY(265); 
+       //Font Settings for Text Title
+       careerinfo.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16)); 
+        //  Stroke size 
+       careerinfo.setStrokeWidth(1);      
+       careerinfo.setUnderline(true);  
+       
+       //  Position setup for Career Objective Input Field
+       careerInput.setLayoutX(70);  
+       careerInput.setLayoutY(280);  
+       
+        // Setup position Career Objective Input Box
+       careerInput.setPrefWidth(260);  
+       careerInput.setPrefHeight(60);
             
             
     }
