@@ -270,10 +270,10 @@ public class JavaFXApplication2 extends Application {
       TextField Rec_EmailField  = new TextField(); 
       
       //  Submission Button
-      Button submit = new Button("Submit Your Information");        
+      Button submit = new Button("Submit Your Information & Build CV");        
       
       // Photo Upload Button With Text
-      Button btnImageLoad = new Button("Upload Your Photo Here"); 
+      Button btnImageLoad = new Button("Upload Your Recent Photo Here"); 
     
       // Photo View Object Created 
       PhotoView = new ImageView();                                 
@@ -1043,7 +1043,15 @@ public class JavaFXApplication2 extends Application {
       
       //  Stage elements show
       stage.show();   
+      
        
+       // Submit Button
+       submit.setPrefHeight(20);
+       submit.setDefaultButton(true);
+       submit.setPrefWidth(200);
+       
+       submit.setLayoutX(370);  
+       submit.setLayoutY(705);  
             
     }
     
