@@ -638,7 +638,198 @@ public class JavaFXApplication2 extends Application {
       // Position Setup for Marital Status Choice Box
       marital_Statusbox.setLayoutX(520);                
       marital_Statusbox.setLayoutY(340);
+      
+      
+      // Educational Qualification   
+      // Educational Qualification Text Title Here
+      educationalinfo.setText("Educational Qualification :"); 
+      
+      //Position of the Educational Qualification text   
+      educationalinfo.setX(15);                          
+      educationalinfo.setY(385);
+      
+      //Font Settings  
+      educationalinfo.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16)); 
         
+      //  Stroke size  
+      educationalinfo.setStrokeWidth(1);                
+      educationalinfo.setUnderline(true); 
+      
+      
+       // Name of degree 
+       // Name of degree Text 
+      degreename.setText("Name of degree ");  
+      
+      //Position of the Name of degree text   
+      degreename.setX(30);                     
+      degreename.setY(410);
+        
+      //Font Settings for Name of degree Text  
+      degreename.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
+               
+      
+      // Input Field for Name of degree 1 
+      // Position Setup for Name of degree 1 Input Field
+      degreename1Field.setLayoutX(30);        
+      degreename1Field.setLayoutY(420);
+      
+      // Input Field for Name of degree 2 
+      // Position Setup for Name of degree 2 Input Field
+      degreename2Field.setLayoutX(30);        
+      degreename2Field.setLayoutY(450);
+      
+      // Input Field for Name of degree 3
+      // Position Setup for Name of degree 3 Input Field
+      degreename3Field.setLayoutX(30);        
+      degreename3Field.setLayoutY(480);
+       
+      
+
+     // Institution Names 
+     // Institution Names Text
+      institutionname.setText("Institution Names "); 
+        
+      //Position of the Institution Names text  
+      institutionname.setX(200);                      
+      institutionname.setY(410);
+        
+      //Font Settings  
+      institutionname.setFont(Font.font("Arial",FontPosture.REGULAR,14));  
+      
+      
+      // Input Field for Institution 1 
+      // Position Setup for Institution 1 
+      institutionname1Field.setLayoutX(200);        
+      institutionname1Field.setLayoutY(420);
+      
+      // Input Field for Institution 2 
+      // Position Setup for Institution 2
+      institutionname2Field.setLayoutX(200);        
+      institutionname2Field.setLayoutY(450);
+      
+      // Input Field for Institution 3 
+      // Position Setup for Institution 3 
+      institutionname3Field.setLayoutX(200);        
+      institutionname3Field.setLayoutY(480);
+       
+     
+      
+      // Board
+      // Board Names Text
+      Boardnname.setText("Board Names ");     
+      
+      //Position of the Board Names text  
+      Boardnname.setX(370);                       
+      Boardnname.setY(410);
+      
+      //Font Settings   
+      Boardnname.setFont(Font.font("Arial",FontPosture.REGULAR,14)); 
+      
+      // Input Field for Board 1 
+      // Position Setup for Board 1 
+      Boardnname1Field.setLayoutX(370);        
+      Boardnname1Field.setLayoutY(420);
+      
+      // Input Field for Board 2 
+      // Position Setup for Board 2
+      Boardnname2Field.setLayoutX(370);         
+      Boardnname2Field.setLayoutY(450);
+      
+      // Input Field for Board 3 
+      // Position Setup for Board 3 
+      Boardnname3Field.setLayoutX(370);        
+      Boardnname3Field.setLayoutY(480);
+      
+        
+      // Group or Subject
+      // Group or Subject Text
+      group_sub.setText("Group/Subject "); 
+     
+      //Position of the Group or Subject text  
+      group_sub.setX(540);                        
+      group_sub.setY(410);
+        
+      //Font Settings  
+      group_sub.setFont(Font.font("Arial",FontPosture.REGULAR,14));  
+      
+      // Input Field for Group or Subject 1   
+      group_sub1Field.setLayoutX(540);         
+      group_sub1Field.setLayoutY(420);
+      
+      // Input Field for Group or Subject 2   
+      group_sub2Field.setLayoutX(540);         
+      group_sub2Field.setLayoutY(450);
+      
+      // Input Field for Group or Subject 3  
+      group_sub3Field.setLayoutX(540);         
+      group_sub3Field.setLayoutY(480);
+      
+     
+      
+      
+      //Result	
+      // Result Text
+      resultinfo.setText("Result ");      
+        
+      //Position of the Result text   
+      resultinfo.setX(700);                       
+      resultinfo.setY(410);
+      
+      //Font Settings   
+      resultinfo.setFont(Font.font("Arial",FontPosture.REGULAR,14)); 
+      
+      // Input Field for Result 1   
+      result1Field.setLayoutX(700);        
+      result1Field.setLayoutY(420);
+      result1Field.setPrefWidth(90);    
+      result1Field.setPrefHeight(10);
+      
+      // Input Field for Result 2    
+      result2Field.setLayoutX(700);      
+      result2Field.setLayoutY(450);
+      result2Field.setPrefWidth(90);    
+      result2Field.setPrefHeight(10);
+      
+      // Input Field for Result 3   
+      result3Field.setLayoutX(700);        
+      result3Field.setLayoutY(480);
+      result3Field.setPrefWidth(90);    
+      result3Field.setPrefHeight(10);
+        
+     
+      
+      // Passing year
+      // Passing year Text
+      pyear.setText("Passing year ");  
+        
+      //Position of Passing year text  
+      pyear.setX(820);                        
+      pyear.setY(410);
+        
+      //Font Settings  
+      pyear.setFont(Font.font("Arial",FontPosture.REGULAR,14));  
+      
+      // Input Field for Passing year 1  
+      pyear1Field.setLayoutX(820);          
+      pyear1Field.setLayoutY(420);
+        pyear1Field.setPrefWidth(60);    
+        pyear1Field.setPrefHeight(10);
+      
+      // Input Field for Passing year 2  
+      pyear2Field.setLayoutX(820);          
+      pyear2Field.setLayoutY(450);
+        pyear2Field.setPrefWidth(60);    
+        pyear2Field.setPrefHeight(10);
+      
+        
+      // Input Field for Passing year 3  
+      pyear3Field.setLayoutX(820);         
+      pyear3Field.setLayoutY(480);
+        pyear3Field.setPrefWidth(60);    
+        pyear3Field.setPrefHeight(10);
+        
+     
+      
             
     }
     
