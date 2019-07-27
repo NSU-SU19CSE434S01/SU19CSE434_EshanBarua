@@ -17,6 +17,7 @@ import javafx.collections.FXCollections;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.scene.Group;
 import javafx.scene.Scene; 
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox; 
 import javafx.scene.control.DatePicker; 
@@ -1037,14 +1038,8 @@ public class JavaFXApplication2 extends Application {
       Rec_EmailField.setLayoutX(790);              
       Rec_EmailField.setLayoutY(672);
       
-        
-      // Scene added in stage 
-      stage.setScene(scene);    
       
-      //  Stage elements show
-      stage.show();   
-      
-       
+         
        // Submit Button
        submit.setPrefHeight(20);
        submit.setDefaultButton(true);
@@ -1052,7 +1047,78 @@ public class JavaFXApplication2 extends Application {
        
        submit.setLayoutX(370);  
        submit.setLayoutY(705);  
-            
+       
+      
+       //Submit button event handeler   
+        submit.setOnAction(new EventHandler<ActionEvent>() 
+       {
+            @Override 
+             public void handle(ActionEvent evn) 
+            {
+                // Contact Information
+                 if(nameField.getText().isEmpty()) 
+                {
+                    AlertNotification(Alert.AlertType.ERROR, stage.getScene().getWindow(), "Error Occured !", "Your Name Field is Empty\n\t  Please Enter Your Name");
+                    return ;
+                    
+                }
+                 
+                if(caddressField.getText().isEmpty()) 
+                {
+                    AlertNotification(Alert.AlertType.ERROR, stage.getScene().getWindow(),"Error Occured !", "Your Current Address Field is Empty\n\tPlease Enter Your Current Address");
+                    return ;
+                    
+                }
+                
+                if(contactField.getText().isEmpty()) 
+                {
+                    AlertNotification(Alert.AlertType.ERROR, stage.getScene().getWindow(),"Error Occured !", "Your  Contact Number Field is Empty\n\tPlease Enter Your Contact Number");
+                    return ;
+                    
+                }
+                
+                if(emailField.getText().isEmpty()) 
+                {
+                    AlertNotification(Alert.AlertType.ERROR, stage.getScene().getWindow(),"Error Occured !", "Your  Email Address Field is Empty\n\tPlease Enter Your Email Address");
+                    return ;
+                    
+                }
+                
+                // Personal Information
+                
+               if(fanameField.getText().isEmpty()) 
+                {
+                    AlertNotification(Alert.AlertType.ERROR, stage.getScene().getWindow(),"Error Occured !", "Your Father's Name Field is Empty\n\tPlease Enter Your Father's Name");
+                    return ;
+                    
+                }
+                
+                if(motnameField.getText().isEmpty()) 
+                {
+                    AlertNotification(Alert.AlertType.ERROR, stage.getScene().getWindow(),"Error Occured !", "Your Mother's Name Field is Empty\n\tPlease Enter Your Mother's Name");
+                    return ;
+                    
+                }
+                
+                if(perAddressField.getText().isEmpty()) 
+                {
+                    AlertNotification(Alert.AlertType.ERROR, stage.getScene().getWindow(),"Error Occured !", "Your Permanent Address Field is Empty\n\tPlease Enter Your Permanent Address");
+                    return ;
+                    
+                }
+                
+                AlertNotification(Alert.AlertType.CONFIRMATION, stage.getScene().getWindow(), "Successfully Completed !", "Welcome " + nameField.getText());
+            }
+             
+        } );
+      
+        
+      // Scene added in stage 
+      stage.setScene(scene);    
+      
+      //  Stage elements show
+      stage.show();   
+              
     }
     
      /**
