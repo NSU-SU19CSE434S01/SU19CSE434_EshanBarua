@@ -484,6 +484,24 @@ public class JavaFXApplication2 extends Application {
        PhotoView.setLayoutX(745);  
        PhotoView.setLayoutY(120);
         
+        
+      // Personal Informations  
+      // Personal Information Text Title Here
+      personalinfo.setText("Personal Information :");  
+      
+      //Position of the Personal Information text 
+      personalinfo.setX(385);                          
+      personalinfo.setY(75);
+        
+      //Font Settings  
+      personalinfo.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));     
+        
+      //Stroke size   
+      personalinfo.setStrokeWidth(1);               
+      personalinfo.setUnderline(true); 
+       
+      
+        
             
     }
     
