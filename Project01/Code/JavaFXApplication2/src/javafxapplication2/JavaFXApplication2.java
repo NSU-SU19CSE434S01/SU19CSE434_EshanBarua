@@ -557,6 +557,7 @@ public class JavaFXApplication2 extends Application {
       //Position of Date Of Birth Text   
       dobText.setX(395);           
       dobText.setY(206);
+        
       //Font Settings for Date Of Birth  
       dobText.setFont(Font.font("Arial",FontPosture.REGULAR,14)); 
       
@@ -956,7 +957,39 @@ public class JavaFXApplication2 extends Application {
       Skills2.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
                
       Skills2Field.setLayoutX(500);              
-      Skills2Field.setLayoutY(595);   
+      Skills2Field.setLayoutY(595);  
+        
+      // Extra Curriculum Activities
+      
+      curriculum_act.setText("Extra Curriculum Activities : ");               
+     
+      curriculum_act.setX(15);                         
+      curriculum_act.setY(650);
+      curriculum_act.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));  
+      curriculum_act.setStrokeWidth(1);                
+      curriculum_act.setUnderline(true);     
+               
+      curriculum_activitiesInput.setLayoutX(265);              
+      curriculum_activitiesInput.setLayoutY(635); 
+        curriculum_activitiesInput.setPrefWidth(380);    
+        curriculum_activitiesInput.setPrefHeight(10);
+     
+       
+      // Certifications  
+       Certifications.setText("Certifications  : ");                 
+     
+       Certifications.setX(15);                             
+       Certifications.setY(680);
+       Certifications.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));   
+       Certifications.setStrokeWidth(1);               
+       Certifications.setUnderline(true);  
+      
+       CertificationsField.setLayoutX(265);              
+       CertificationsField.setLayoutY(665); 
+        CertificationsField.setPrefWidth(380);    
+        CertificationsField.setPrefHeight(10);
+       
+       
             
     }
     
