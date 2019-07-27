@@ -468,7 +468,22 @@ public class JavaFXApplication2 extends Application {
         // Setup position Career Objective Input Box
        careerInput.setPrefWidth(260);  
        careerInput.setPrefHeight(60);
-            
+        
+     
+        // Photo Upload Field With Posiiton
+      
+       // Photo Upload Field Position
+       btnImageLoad.setLayoutX(740);  
+       btnImageLoad.setLayoutY(90);
+       
+       // Photo View
+       PhotoView.setFitWidth(135);      
+       PhotoView.setFitHeight(160);
+       
+       // Photo View Frame Position with size
+       PhotoView.setLayoutX(745);  
+       PhotoView.setLayoutY(120);
+        
             
     }
     
