@@ -1037,6 +1037,12 @@ public class JavaFXApplication2 extends Application {
       Rec_EmailField.setLayoutX(790);              
       Rec_EmailField.setLayoutY(672);
       
+        
+      // Scene added in stage 
+      stage.setScene(scene);    
+      
+      //  Stage elements show
+      stage.show();   
        
             
     }
