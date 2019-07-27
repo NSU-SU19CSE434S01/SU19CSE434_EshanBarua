@@ -500,7 +500,35 @@ public class JavaFXApplication2 extends Application {
       personalinfo.setStrokeWidth(1);               
       personalinfo.setUnderline(true); 
        
+        
+      // Father’s Name 
+      // Father’s Name Text
+      faname.setText("Father’s Name :"); 
+      //Position of the Father’s Name Text 
+      faname.setX(395);          
+      faname.setY(116);
+      //Font Settings for Name Text
+      faname.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
+               
+      // Input Field Father’s Name 
+      // Position Setup for input field
+      fanameField.setLayoutX(520);  
+      fanameField.setLayoutY(98);
       
+     
+       // Mother's Name  
+      // Mother’s Name Text
+      motname.setText("Mother’s Name :");
+      //Position of the Mother’s Name Text   
+      motname.setX(395);           
+      motname.setY(146);
+      //Font Settings for Mother’s Name 
+      motname.setFont(Font.font("Arial",FontPosture.REGULAR,14));
+               
+      // Input Field for Mother’s Name 
+      
+      motnameField.setLayoutX(520);  // Position Setup for input field
+      motnameField.setLayoutY(130);
         
             
     }
