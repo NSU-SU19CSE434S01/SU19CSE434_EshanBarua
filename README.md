@@ -9,7 +9,7 @@
   - Test JavaFX 
   - Test Junit5
 - [X] Create Project (Netbean)
-- [X] Strat Build HTML file of a Resume (Bangladeshi Standerd)
-- [X] Strat Build CSS file of the Resume
-- [X] Strat Build JFX GUI of the Resume
-- [X] Strat Implement Test Codes for the Resume
+- [X] Build HTML file of a Resume (Bangladeshi Standerd)
+- [X] Build CSS file of the Resume
+- [X] Build JFX GUI of the Resume
+- [X] Implement Test Codes for the Resume
