@@ -5,6 +5,7 @@
  */
 package javafxapplication2;
 
+
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -235,7 +236,14 @@ public class JavaFXApplication2 extends Application {
       // Text Object for Skills 2
       Text Skills2  = new Text();    
        // Input Field Object Created for Skills 2
-      TextField Skills2Field = new TextField();       
+      TextField Skills2Field = new TextField();  
+      
+      
+      // Text Object for Skills 3
+      Text Skills3  = new Text();    
+      
+      // Input Field Object Created for Skills 3
+      TextField Skills3Field = new TextField();  
       
       
       // Text Object for curriculum activities
@@ -246,8 +254,10 @@ public class JavaFXApplication2 extends Application {
       //Text object for certification
       Text Certifications   = new Text();
       //input field for certification
-      TextField CertificationsField  = new TextField(); 
+      TextField CertificationsField1  = new TextField(); 
       
+      TextField CertificationsField2  = new TextField(); 
+
       
       Text Recommendations   = new Text();  
       //Text field for recommendations
@@ -330,8 +340,8 @@ public class JavaFXApplication2 extends Application {
                 working_exp, organization, organizationField, duration,
                 durationField, Designation, DesignationField, Languages, Languages1,
                 Languages2, Languages1Field, Languages2Field, Skills, Skills1, Skills1Field,
-                Skills2, Skills2Field, curriculum_act, curriculum_activitiesInput,
-                Certifications, CertificationsField, Recommendations, Rec_Name , Rec_NameField,
+                Skills2, Skills2Field, Skills3, Skills3Field, curriculum_act, curriculum_activitiesInput,
+                Certifications, CertificationsField1,  CertificationsField2, Recommendations, Rec_Name , Rec_NameField,
                 Rec_Designation, Rec_DesignationField, Rec_Institution, Rec_InstitutionField,
                 Rec_Email , Rec_EmailField, submit
                 
@@ -370,7 +380,7 @@ public class JavaFXApplication2 extends Application {
       contactinfo.setText("Contact Information :");  
       
       //Position of the contact information text
-      contactinfo.setX(15);                 
+      contactinfo.setX(20);                 
       contactinfo.setY(75);
       
       //Font Settings for Text Title 
@@ -453,8 +463,8 @@ public class JavaFXApplication2 extends Application {
        careerinfo.setText("Career Objective :");  
       
        //Position of the Career Objective Text 
-       careerinfo.setX(15);                 
-       careerinfo.setY(265); 
+       careerinfo.setX(400);                 
+       careerinfo.setY(75); 
         
        //Font Settings for Text Title
        careerinfo.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16)); 
@@ -464,8 +474,8 @@ public class JavaFXApplication2 extends Application {
        careerinfo.setUnderline(true);  
        
        //  Position setup for Career Objective Input Field
-       careerInput.setLayoutX(70);  
-       careerInput.setLayoutY(280);  
+       careerInput.setLayoutX(400);  
+       careerInput.setLayoutY(100);  
        
         // Setup position Career Objective Input Box
        careerInput.setPrefWidth(260);  
@@ -475,8 +485,8 @@ public class JavaFXApplication2 extends Application {
        // Photo Upload Field With Posiiton
       
        // Photo Upload Field Position
-       btnImageLoad.setLayoutX(740);  
-       btnImageLoad.setLayoutY(90);
+       btnImageLoad.setLayoutX(600);  
+       btnImageLoad.setLayoutY(650);
        
        // Photo View
        PhotoView.setFitWidth(135);      
@@ -492,8 +502,8 @@ public class JavaFXApplication2 extends Application {
       personalinfo.setText("Personal Information :");  
       
       //Position of the Personal Information text 
-      personalinfo.setX(385);                          
-      personalinfo.setY(75);
+      personalinfo.setX(20);                          
+      personalinfo.setY(265);
         
       //Font Settings  
       personalinfo.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));     
@@ -508,30 +518,30 @@ public class JavaFXApplication2 extends Application {
       faname.setText("Father’s Name :"); 
         
       //Position of the Father’s Name Text 
-      faname.setX(395);          
-      faname.setY(116);
+      faname.setX(30);          
+      faname.setY(300);
       //Font Settings for Name Text
       faname.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
                
       // Input Field Father’s Name 
       // Position Setup for input field
-      fanameField.setLayoutX(520);  
-      fanameField.setLayoutY(98);
+      fanameField.setLayoutX(180);  
+      fanameField.setLayoutY(285);
       
      
       // Mother's Name  
       // Mother’s Name Text
       motname.setText("Mother’s Name :");
       //Position of the Mother’s Name Text   
-      motname.setX(395);           
-      motname.setY(146);
+      motname.setX(30);           
+      motname.setY(330);
       //Font Settings for Mother’s Name 
       motname.setFont(Font.font("Arial",FontPosture.REGULAR,14));
                
       // Input Field for Mother’s Name 
       // Position Setup for input field
-      motnameField.setLayoutX(520);  
-      motnameField.setLayoutY(130);
+      motnameField.setLayoutX(180);  
+      motnameField.setLayoutY(315);
         
       
       // Permanent Address 
@@ -539,32 +549,32 @@ public class JavaFXApplication2 extends Application {
       perAddress.setText("Permanent Address :"); 
       
       //Position of Permanent Address Text  
-      perAddress.setX(395);                   
-      perAddress.setY(176);
+      perAddress.setX(30);                   
+      perAddress.setY(360);
       //Font Settings for Permanent Address  
       perAddress.setFont(Font.font("Arial",FontPosture.REGULAR,14)); 
                
       // Input Field for Permanent Address
       
       // Position Setup for Permanent Address Input Field
-      perAddressField.setLayoutX(520);      
-      perAddressField.setLayoutY(160);
+      perAddressField.setLayoutX(180);      
+      perAddressField.setLayoutY(345);
      
       // Date Of Birth ( DOB )
       // Date Of Birth Text
       dobText.setText("Date Of Birth :"); 
       
       //Position of Date Of Birth Text   
-      dobText.setX(395);           
-      dobText.setY(206);
+      dobText.setX(30);           
+      dobText.setY(390);
         
       //Font Settings for Date Of Birth  
       dobText.setFont(Font.font("Arial",FontPosture.REGULAR,14)); 
       
       // DOB Picker Input Box
       // Position Setup for DOB Picker Input Box  
-      dobhBox.setLayoutX(520);      
-      dobhBox.setLayoutY(190);
+      dobhBox.setLayoutX(180);      
+      dobhBox.setLayoutY(375);
       
         
       //  Nationality
@@ -572,63 +582,63 @@ public class JavaFXApplication2 extends Application {
       nationality.setText("Nationality :");  
         
       //Position of Nationality Text  
-      nationality.setX(395);                    
-      nationality.setY(236);
+      nationality.setX(30);                    
+      nationality.setY(420);
         
       //Font Settings for Nationality  
       nationality.setFont(Font.font("Arial",FontPosture.REGULAR,14));  
                
       // Input Field for Nationality
       // Position Setup for Nationality Input Field
-      nationalityField.setLayoutX(520);       
-      nationalityField.setLayoutY(220);
+      nationalityField.setLayoutX(180);       
+      nationalityField.setLayoutY(405);
       
        // Gender Choice Box Text
       // Gender Text
       gender.setText("Gender : ");      
         
       //Position of Gender Text  
-      gender.setX(395);                      
-      gender.setY(269);
+      gender.setX(30);                      
+      gender.setY(450);
         
       //Font Settings for Gender  
       gender.setFont(Font.font("Arial",FontPosture.REGULAR,14)); 
         
       // Gender Choice Box Position Setup 
       // Position Setup for Gender Choice Box 
-      genderbox.setLayoutX(520);            
-      genderbox.setLayoutY(250);
+      genderbox.setLayoutX(180);            
+      genderbox.setLayoutY(435);
           
       //  Religion
       // Religion Text
       religion.setText("Religion :");   
       
       // Position of Religion Text   
-      religion.setX(395);                   
-      religion.setY(299);
+      religion.setX(30);                   
+      religion.setY(480);
       
       //Font Settings for Religion  
       religion.setFont(Font.font("Arial",FontPosture.REGULAR,14)); 
                
       // Input Field for Religion
       // Position Setup for Religion Field
-      religionField.setLayoutX(520);        
-      religionField.setLayoutY(280);
+      religionField.setLayoutX(180);        
+      religionField.setLayoutY(465);
       
       // Blood Group Choice Box Text
       // Blood Group Text
       blood.setText("Blood Group : ");  
      
       //Position of Blood Group Text   
-      blood.setX(395);                           
-      blood.setY(329);
+      blood.setX(30);                           
+      blood.setY(510);
       //Font Settings for Blood Group  
       blood.setFont(Font.font("Arial",FontPosture.REGULAR,14));  
         
       // Blood Group Choice Box Position Setup 
       // Position Setup for Blood Group Choice Box
-      bloodbox.setLayoutX(520);                
-      bloodbox.setLayoutY(310); 
+      bloodbox.setLayoutX(180);                
+      bloodbox.setLayoutY(495); 
         
       
       // Marital Status 
@@ -636,15 +646,15 @@ public class JavaFXApplication2 extends Application {
       marital_Status.setText("Marital Status : ");  
       
       //Position of Marital Status Text   
-      marital_Status.setX(395);                              
-      marital_Status.setY(359);
+      marital_Status.setX(30);                              
+      marital_Status.setY(540);
       //Font Settings for Marital Status  
       marital_Status.setFont(Font.font("Arial",FontPosture.REGULAR,14));  
       
       // Marital Status Choice Box Position Setup 
       // Position Setup for Marital Status Choice Box
-      marital_Statusbox.setLayoutX(520);                
-      marital_Statusbox.setLayoutY(340);
+      marital_Statusbox.setLayoutX(180);                
+      marital_Statusbox.setLayoutY(525);
       
       
       // Educational Qualification   
@@ -652,8 +662,8 @@ public class JavaFXApplication2 extends Application {
       educationalinfo.setText("Educational Qualification :"); 
       
       //Position of the Educational Qualification text   
-      educationalinfo.setX(15);                          
-      educationalinfo.setY(385);
+      educationalinfo.setX(370);                          
+      educationalinfo.setY(450);
       
       //Font Settings  
       educationalinfo.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16)); 
@@ -668,8 +678,8 @@ public class JavaFXApplication2 extends Application {
       degreename.setText("Name of degree ");  
       
       //Position of the Name of degree text   
-      degreename.setX(30);                     
-      degreename.setY(410);
+      degreename.setX(370);                     
+      degreename.setY(480);
         
       //Font Settings for Name of degree Text  
       degreename.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
@@ -677,18 +687,24 @@ public class JavaFXApplication2 extends Application {
       
       // Input Field for Name of degree 1 
       // Position Setup for Name of degree 1 Input Field
-      degreename1Field.setLayoutX(30);        
-      degreename1Field.setLayoutY(420);
+      degreename1Field.setLayoutX(370);        
+      degreename1Field.setLayoutY(520);
+      degreename1Field.setPrefWidth(100);    
+      degreename1Field.setPrefHeight(10);
       
       // Input Field for Name of degree 2 
       // Position Setup for Name of degree 2 Input Field
-      degreename2Field.setLayoutX(30);        
-      degreename2Field.setLayoutY(450);
+      degreename2Field.setLayoutX(370);        
+      degreename2Field.setLayoutY(550);
+      degreename2Field.setPrefWidth(100);    
+      degreename2Field.setPrefHeight(10);
       
       // Input Field for Name of degree 3
       // Position Setup for Name of degree 3 Input Field
-      degreename3Field.setLayoutX(30);        
-      degreename3Field.setLayoutY(480);
+      degreename3Field.setLayoutX(370);        
+      degreename3Field.setLayoutY(580);
+      degreename3Field.setPrefWidth(100);    
+      degreename3Field.setPrefHeight(10);
        
       
 
@@ -697,8 +713,8 @@ public class JavaFXApplication2 extends Application {
       institutionname.setText("Institution Names "); 
         
       //Position of the Institution Names text  
-      institutionname.setX(200);                      
-      institutionname.setY(410);
+      institutionname.setX(500);                      
+      institutionname.setY(480);
         
       //Font Settings  
       institutionname.setFont(Font.font("Arial",FontPosture.REGULAR,14));  
@@ -706,19 +722,24 @@ public class JavaFXApplication2 extends Application {
       
       // Input Field for Institution 1 
       // Position Setup for Institution 1 
-      institutionname1Field.setLayoutX(200);        
-      institutionname1Field.setLayoutY(420);
+      institutionname1Field.setLayoutX(500);        
+      institutionname1Field.setLayoutY(520);
+      institutionname1Field.setPrefWidth(100);    
+      institutionname1Field.setPrefHeight(10);
       
       // Input Field for Institution 2 
       // Position Setup for Institution 2
-      institutionname2Field.setLayoutX(200);        
-      institutionname2Field.setLayoutY(450);
+      institutionname2Field.setLayoutX(500);        
+      institutionname2Field.setLayoutY(550);
+      institutionname2Field.setPrefWidth(100);    
+      institutionname2Field.setPrefHeight(10);
       
       // Input Field for Institution 3 
       // Position Setup for Institution 3 
-      institutionname3Field.setLayoutX(200);        
-      institutionname3Field.setLayoutY(480);
-       
+      institutionname3Field.setLayoutX(500);        
+      institutionname3Field.setLayoutY(580);
+      institutionname3Field.setPrefWidth(100);    
+      institutionname3Field.setPrefHeight(10);
      
       
       // Board
@@ -726,26 +747,32 @@ public class JavaFXApplication2 extends Application {
       Boardnname.setText("Board Names ");     
       
       //Position of the Board Names text  
-      Boardnname.setX(370);                       
-      Boardnname.setY(410);
+      Boardnname.setX(630);                       
+      Boardnname.setY(480);
       
       //Font Settings   
       Boardnname.setFont(Font.font("Arial",FontPosture.REGULAR,14)); 
       
       // Input Field for Board 1 
       // Position Setup for Board 1 
-      Boardnname1Field.setLayoutX(370);        
-      Boardnname1Field.setLayoutY(420);
+      Boardnname1Field.setLayoutX(630);        
+      Boardnname1Field.setLayoutY(520);
+      Boardnname1Field.setPrefWidth(80);    
+      Boardnname1Field.setPrefHeight(10);
       
       // Input Field for Board 2 
       // Position Setup for Board 2
-      Boardnname2Field.setLayoutX(370);         
-      Boardnname2Field.setLayoutY(450);
+      Boardnname2Field.setLayoutX(630);         
+      Boardnname2Field.setLayoutY(550);
+      Boardnname2Field.setPrefWidth(80);    
+      Boardnname2Field.setPrefHeight(10);
       
       // Input Field for Board 3 
       // Position Setup for Board 3 
-      Boardnname3Field.setLayoutX(370);        
-      Boardnname3Field.setLayoutY(480);
+      Boardnname3Field.setLayoutX(630);        
+      Boardnname3Field.setLayoutY(580);    
+      Boardnname3Field.setPrefWidth(80);    
+      Boardnname3Field.setPrefHeight(10);
       
         
       // Group or Subject
@@ -753,83 +780,89 @@ public class JavaFXApplication2 extends Application {
       group_sub.setText("Group/Subject "); 
      
       //Position of the Group or Subject text  
-      group_sub.setX(540);                        
-      group_sub.setY(410);
+      group_sub.setX(730);                        
+      group_sub.setY(480);
         
       //Font Settings  
       group_sub.setFont(Font.font("Arial",FontPosture.REGULAR,14));  
       
       // Input Field for Group or Subject 1   
-      group_sub1Field.setLayoutX(540);         
-      group_sub1Field.setLayoutY(420);
+      group_sub1Field.setLayoutX(730);         
+      group_sub1Field.setLayoutY(520);
+      group_sub1Field.setPrefWidth(80);    
+      group_sub1Field.setPrefHeight(10);
       
       // Input Field for Group or Subject 2   
-      group_sub2Field.setLayoutX(540);         
-      group_sub2Field.setLayoutY(450);
+      group_sub2Field.setLayoutX(730);         
+      group_sub2Field.setLayoutY(550);
+      group_sub2Field.setPrefWidth(80);    
+      group_sub2Field.setPrefHeight(10);
       
       // Input Field for Group or Subject 3  
-      group_sub3Field.setLayoutX(540);         
-      group_sub3Field.setLayoutY(480);
+      group_sub3Field.setLayoutX(730);         
+      group_sub3Field.setLayoutY(580);
+      group_sub3Field.setPrefWidth(80);    
+      group_sub3Field.setPrefHeight(10);
       
-
+      
       //Result	
       // Result Text
       resultinfo.setText("Result ");      
         
       //Position of the Result text   
-      resultinfo.setX(700);                       
-      resultinfo.setY(410);
+      resultinfo.setX(840);                       
+      resultinfo.setY(480);
       
       //Font Settings   
       resultinfo.setFont(Font.font("Arial",FontPosture.REGULAR,14)); 
       
       // Input Field for Result 1   
-      result1Field.setLayoutX(700);        
-      result1Field.setLayoutY(420);
-      result1Field.setPrefWidth(90);    
+      result1Field.setLayoutX(840);        
+      result1Field.setLayoutY(520);
+      result1Field.setPrefWidth(40);    
       result1Field.setPrefHeight(10);
       
       // Input Field for Result 2    
-      result2Field.setLayoutX(700);      
-      result2Field.setLayoutY(450);
-      result2Field.setPrefWidth(90);    
+      result2Field.setLayoutX(840);      
+      result2Field.setLayoutY(550);
+      result2Field.setPrefWidth(40);    
       result2Field.setPrefHeight(10);
       
       // Input Field for Result 3   
-      result3Field.setLayoutX(700);        
-      result3Field.setLayoutY(480);
-      result3Field.setPrefWidth(90);    
+      result3Field.setLayoutX(840);        
+      result3Field.setLayoutY(580);
+      result3Field.setPrefWidth(40);    
       result3Field.setPrefHeight(10);
         
          
       // Passing year
       // Passing year Text
-      pyear.setText("Passing year ");  
+      pyear.setText("year ");  
         
       //Position of Passing year text  
-      pyear.setX(820);                        
-      pyear.setY(410);
+      pyear.setX(900);                        
+      pyear.setY(480);
         
       //Font Settings  
       pyear.setFont(Font.font("Arial",FontPosture.REGULAR,14));  
       
       // Input Field for Passing year 1  
-      pyear1Field.setLayoutX(820);          
-      pyear1Field.setLayoutY(420);
-        pyear1Field.setPrefWidth(60);    
+      pyear1Field.setLayoutX(900);          
+      pyear1Field.setLayoutY(520);
+        pyear1Field.setPrefWidth(50);    
         pyear1Field.setPrefHeight(10);
       
       // Input Field for Passing year 2  
-      pyear2Field.setLayoutX(820);          
-      pyear2Field.setLayoutY(450);
-        pyear2Field.setPrefWidth(60);    
+      pyear2Field.setLayoutX(900);          
+      pyear2Field.setLayoutY(550);
+        pyear2Field.setPrefWidth(50);    
         pyear2Field.setPrefHeight(10);
       
         
       // Input Field for Passing year 3  
-      pyear3Field.setLayoutX(820);         
-      pyear3Field.setLayoutY(480);
-        pyear3Field.setPrefWidth(60);    
+      pyear3Field.setLayoutX(900);         
+      pyear3Field.setLayoutY(580);
+        pyear3Field.setPrefWidth(50);    
         pyear3Field.setPrefHeight(10);
         
        
@@ -838,8 +871,8 @@ public class JavaFXApplication2 extends Application {
       working_exp.setText("Working Experience : ");  
      
       //Position of the Working Experience text   
-      working_exp.setX(15);                          
-      working_exp.setY(530);
+      working_exp.setX(400);                          
+      working_exp.setY(200);
       
       //Font Settings   
       working_exp.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));    
@@ -853,8 +886,8 @@ public class JavaFXApplication2 extends Application {
       organization.setText("Organization ");    
         
       //Position of the Organization text  
-      organization.setX(180);                      
-      organization.setY(535);
+      organization.setX(400);                      
+      organization.setY(230);
         
       //Font Settings for Organization Text   
       organization.setFont(Font.font("Arial",FontPosture.REGULAR,14));  
@@ -862,46 +895,46 @@ public class JavaFXApplication2 extends Application {
       
       // Input Field for Name of Organization 
       // Position Setup for Name of Organization Input Field
-      organizationField.setLayoutX(265);       
-      organizationField.setLayoutY(520);
+      organizationField.setLayoutX(500);       
+      organizationField.setLayoutY(215);
       
       // Duration
       // Duration Text
       duration.setText("Duration ");          
         
       //Position of The Duration text  
-      duration.setX(430);                      
-      duration.setY(535);
+      duration.setX(400);                      
+      duration.setY(260);
         
       //Font Settings for Duration Text  
       duration.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
       
       // Position Setup Duration Input Field  
       durationField.setLayoutX(500);          
-      durationField.setLayoutY(520);
+      durationField.setLayoutY(245);
       
       // Designation
       // Designation Text
       Designation.setText("Designation ");      
         
       //Position of The Designation Text  
-      Designation.setX(660);                          
-      Designation.setY(535);
+      Designation.setX(400);                          
+      Designation.setY(290);
         
       //Font Settings for Designation Text  
       Designation.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
       
       // Position Setup Designation Input Field  
-      DesignationField.setLayoutX(740);              
-      DesignationField.setLayoutY(520);  
+      DesignationField.setLayoutX(500);              
+      DesignationField.setLayoutY(275);  
       
      // Languages 
       // Languages Text Title Here
       Languages.setText("Languages : ");            
      
       //Position of The Languages Text   
-      Languages.setX(15);                          
-      Languages.setY(570);
+      Languages.setX(720);                          
+      Languages.setY(210);
         
       //Font Settings    
       Languages.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));   
@@ -911,30 +944,30 @@ public class JavaFXApplication2 extends Application {
       Languages.setUnderline(true);     
         
       Languages1.setText("Language 1 ");           
-      Languages1.setX(180);                         
-      Languages1.setY(575);
+      Languages1.setX(720);                         
+      Languages1.setY(240);
       Languages1.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
                
-      Languages1Field.setLayoutX(265);              
-      Languages1Field.setLayoutY(560);  
+      Languages1Field.setLayoutX(810);              
+      Languages1Field.setLayoutY(220);  
       
       Languages2.setText("Language 2 ");           
-      Languages2.setX(420);                         
-      Languages2.setY(575);
+      Languages2.setX(720);                         
+      Languages2.setY(270);
       Languages2.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
                
-      Languages2Field.setLayoutX(500);              
-      Languages2Field.setLayoutY(560);  
+      Languages2Field.setLayoutX(810);              
+      Languages2Field.setLayoutY(255);  
       
       
       
        // Skills
        // Skills Text Title Here
-      Skills.setText("Skills : ");                
+      Skills.setText("Prograamming Laguage Known: ");                
      
       //Position of The Skills Text   
-      Skills.setX(15);                             
-      Skills.setY(610);
+      Skills.setX(720);                             
+      Skills.setY(75);
       
        //Font Settings  
       Skills.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));    
@@ -944,50 +977,64 @@ public class JavaFXApplication2 extends Application {
       Skills.setUnderline(true);     
         
       Skills1.setText("Skill 1 ");           
-      Skills1.setX(180);                         
-      Skills1.setY(610);
+      Skills1.setX(720);                         
+      Skills1.setY(105);
       Skills1.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
                
-      Skills1Field.setLayoutX(265);              
-      Skills1Field.setLayoutY(595);  
+      Skills1Field.setLayoutX(800);              
+      Skills1Field.setLayoutY(85);  
       
       Skills2.setText("Skill 2 ");           
-      Skills2.setX(420);                         
-      Skills2.setY(610);
+      Skills2.setX(720);                         
+      Skills2.setY(135);
       Skills2.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
                
-      Skills2Field.setLayoutX(500);              
-      Skills2Field.setLayoutY(595);  
+      Skills2Field.setLayoutX(800);              
+      Skills2Field.setLayoutY(115);
+      
+      Skills3.setText("Skill 3 ");           
+      Skills3.setX(720);                         
+      Skills3.setY(165);
+      Skills3.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
+               
+      Skills3Field.setLayoutX(800);              
+      Skills3Field.setLayoutY(145);
         
       // Extra Curriculum Activities
       
       curriculum_act.setText("Extra Curriculum Activities : ");               
      
-      curriculum_act.setX(15);                         
-      curriculum_act.setY(650);
+      curriculum_act.setX(720);                         
+      curriculum_act.setY(330);
       curriculum_act.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));  
       curriculum_act.setStrokeWidth(1);                
       curriculum_act.setUnderline(true);     
                
-      curriculum_activitiesInput.setLayoutX(265);              
-      curriculum_activitiesInput.setLayoutY(635); 
-        curriculum_activitiesInput.setPrefWidth(380);    
-        curriculum_activitiesInput.setPrefHeight(10);
+      curriculum_activitiesInput.setLayoutX(720);              
+      curriculum_activitiesInput.setLayoutY(360); 
+        curriculum_activitiesInput.setPrefWidth(240);    
+        curriculum_activitiesInput.setPrefHeight(50);
      
        
       // Certifications  
        Certifications.setText("Certifications  : ");                 
      
-       Certifications.setX(15);                             
-       Certifications.setY(680);
+       Certifications.setX(400);                             
+       Certifications.setY(340);
        Certifications.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));   
        Certifications.setStrokeWidth(1);               
        Certifications.setUnderline(true);  
       
-       CertificationsField.setLayoutX(265);              
-       CertificationsField.setLayoutY(665); 
-        CertificationsField.setPrefWidth(380);    
-        CertificationsField.setPrefHeight(10);
+       CertificationsField1.setLayoutX(400);              
+       CertificationsField1.setLayoutY(360); 
+        CertificationsField1.setPrefWidth(270);    
+        CertificationsField1.setPrefHeight(10);
+        
+           
+       CertificationsField2.setLayoutX(400);              
+       CertificationsField2.setLayoutY(395); 
+        CertificationsField2.setPrefWidth(270);    
+        CertificationsField2.setPrefHeight(10);
        
         
       // Recommendations :
@@ -995,8 +1042,8 @@ public class JavaFXApplication2 extends Application {
       Recommendations.setText("Recommendations : ");                
       
       //Font Settings
-      Recommendations.setX(670);                             
-      Recommendations.setY(570);
+      Recommendations.setX(30);                             
+      Recommendations.setY(585);
        
       Recommendations.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16)); 
       
@@ -1005,44 +1052,44 @@ public class JavaFXApplication2 extends Application {
       Recommendations.setUnderline(true);     
         
       Rec_Name.setText("Name ");           
-      Rec_Name.setX(680);                         
-      Rec_Name.setY(600);
+      Rec_Name.setX(30);                         
+      Rec_Name.setY(610);
       Rec_Name.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
                
-      Rec_NameField.setLayoutX(790);              
-      Rec_NameField.setLayoutY(580);  
+      Rec_NameField.setLayoutX(180);              
+      Rec_NameField.setLayoutY(600);  
       
       Rec_Designation.setText("Designation ");           
-      Rec_Designation.setX(680);                         
-      Rec_Designation.setY(630);
+      Rec_Designation.setX(30);                         
+      Rec_Designation.setY(640);
       Rec_Designation.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
                
-      Rec_DesignationField.setLayoutX(790);              
-      Rec_DesignationField.setLayoutY(612);  
+      Rec_DesignationField.setLayoutX(180);              
+      Rec_DesignationField.setLayoutY(630);  
       
       Rec_Institution.setText("Institution ");           
-      Rec_Institution.setX(680);                         
-      Rec_Institution.setY(660);
+      Rec_Institution.setX(30);                         
+      Rec_Institution.setY(670);
       Rec_Institution.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
                
-      Rec_InstitutionField.setLayoutX(790);              
-      Rec_InstitutionField.setLayoutY(642);
+      Rec_InstitutionField.setLayoutX(180);              
+      Rec_InstitutionField.setLayoutY(660);
       
       
       Rec_Email.setText("E-mail ");           
-      Rec_Email.setX(680);                         
-      Rec_Email.setY(690);
+      Rec_Email.setX(30);                         
+      Rec_Email.setY(700);
       Rec_Email.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
                
-      Rec_EmailField.setLayoutX(790);              
-      Rec_EmailField.setLayoutY(672);
+      Rec_EmailField.setLayoutX(180);              
+      Rec_EmailField.setLayoutY(690);
       
       
          
        // Submit Button
        submit.setPrefHeight(20);
        submit.setDefaultButton(true);
-       submit.setPrefWidth(200);
+       submit.setPrefWidth(250);
        
        submit.setLayoutX(370);  
        submit.setLayoutY(705);  
