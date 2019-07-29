@@ -91,10 +91,10 @@ public class JavaFXApplication2 extends Application {
         // Input Field Object created for Father's Name 
       TextField fanameField = new TextField();       
       
-        // Text Object for Mother’s Name created  
+        // Text Object for Mother's Name created  
       
        Text motname = new Text();        
-       // Input Field Object created for Mother’s Name
+       // Input Field Object created for Mother's Name
       TextField motnameField = new TextField();       
       
       // Text Object for Permanent Address created
@@ -117,7 +117,7 @@ public class JavaFXApplication2 extends Application {
       // Text Object for Gender created
       Text gender = new Text();                      
       ChoiceBox genderbox = extracted(); 
-      // Gennder Choice Box Object Created
+      // Gender Choice Box Object Created
   
        // Text Object for Religion created
       Text religion = new Text();     
@@ -363,7 +363,7 @@ public class JavaFXApplication2 extends Application {
       title.setY(25);
       
       //Font Settings for Text Title 
-      title.setFont(Font.font("Times New Roman",FontPosture.REGULAR,20));
+      title.setFont(Font.font("Times New Roman",FontPosture.REGULAR,30));
       
       //Color Fill inside the text title        
       title.setFill(Color.BLACK); 
@@ -372,7 +372,7 @@ public class JavaFXApplication2 extends Application {
       title.setStrokeWidth(2); 
       
       // Color of stroke
-      title.setStroke(Color.GREEN);          
+      title.setStroke(Color.BLUE);          
             
         
       // Contact Informations  
@@ -489,12 +489,12 @@ public class JavaFXApplication2 extends Application {
        btnImageLoad.setLayoutY(650);
        
        // Photo View
-       PhotoView.setFitWidth(135);      
+       PhotoView.setFitWidth(130);      
        PhotoView.setFitHeight(160);
        
        // Photo View Frame Position with size
-       PhotoView.setLayoutX(745);  
-       PhotoView.setLayoutY(120);
+       PhotoView.setLayoutX(790);  
+       PhotoView.setLayoutY(600);
         
         
       // Personal Informations  
@@ -513,32 +513,32 @@ public class JavaFXApplication2 extends Application {
       personalinfo.setUnderline(true); 
        
         
-      // Father’s Name 
-      // Father’s Name Text
-      faname.setText("Father’s Name :"); 
+      // Father's Name 
+      // Father's Name Text
+      faname.setText("Father's Name :"); 
         
-      //Position of the Father’s Name Text 
+      //Position of the Father's Name Text 
       faname.setX(30);          
       faname.setY(300);
       //Font Settings for Name Text
       faname.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
                
-      // Input Field Father’s Name 
+      // Input Field Father's Name 
       // Position Setup for input field
       fanameField.setLayoutX(180);  
       fanameField.setLayoutY(285);
       
      
       // Mother's Name  
-      // Mother’s Name Text
-      motname.setText("Mother’s Name :");
-      //Position of the Mother’s Name Text   
+      // Mother's Name Text
+      motname.setText("Mother's Name :");
+      //Position of the Mother's Name Text   
       motname.setX(30);           
       motname.setY(330);
-      //Font Settings for Mother’s Name 
+      //Font Settings for Mother's Name 
       motname.setFont(Font.font("Arial",FontPosture.REGULAR,14));
                
-      // Input Field for Mother’s Name 
+      // Input Field for Mother's Name 
       // Position Setup for input field
       motnameField.setLayoutX(180);  
       motnameField.setLayoutY(315);
@@ -1017,7 +1017,7 @@ public class JavaFXApplication2 extends Application {
      
        
       // Certifications  
-       Certifications.setText("Certifications  : ");                 
+       Certifications.setText("Achievements  : ");                 
      
        Certifications.setX(400);                             
        Certifications.setY(340);
