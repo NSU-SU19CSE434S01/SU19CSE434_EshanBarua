@@ -116,7 +116,7 @@ public class JavaFXApplication2 extends Application {
       
       // Text Object for Gender created
       Text gender = new Text();                      
-      ChoiceBox genderbox = new ChoiceBox(FXCollections.observableArrayList("Male", "Female", "Others") ); 
+      ChoiceBox genderbox = extracted(); 
       // Gennder Choice Box Object Created
   
        // Text Object for Religion created
@@ -1160,6 +1160,11 @@ public class JavaFXApplication2 extends Application {
       stage.show();   
               
     }
+
+
+	private ChoiceBox extracted() {
+		return new ChoiceBox(FXCollections.observableArrayList("Male", "Female", "Others") );
+	}
     
     
        private void AlertNotification(Alert.AlertType alert_Type, Window owner, String title, String message)
