@@ -9,6 +9,7 @@ package javafxapplication2;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Application;
@@ -32,6 +33,8 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontPosture;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.stage.Window;
@@ -48,7 +51,7 @@ public class JavaFXApplication2 extends Application {
      
     @Override
     public void start(Stage stage) throws Exception {
-
+        
         //Text object Created for Title here
         Text title = new Text();                      
         
@@ -280,8 +283,9 @@ public class JavaFXApplication2 extends Application {
       //input field for recommendation email
       TextField Rec_EmailField  = new TextField(); 
       
-      //  Submission Button
-      Button submit = new Button("Submit Your Information & Build CV");        
+        //  Submission Button
+         Button submit = new Button("Submit Your Information & Build CV");        
+      
       
       // Photo Upload Button With Text
       Button btnImageLoad = new Button("Upload Your Recent Photo Here"); 

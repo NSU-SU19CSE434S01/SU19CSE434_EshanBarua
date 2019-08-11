@@ -17,11 +17,11 @@ public class PhotoCheck {
  
         // create an image input stream from the specified file
  
-  ImageInputStream iis = ImageIO.createImageInputStream(file);
+  ImageInputStream upload = ImageIO.createImageInputStream(file);
  
   // get all currently registered readers that recognize the image format
  
-  Iterator<ImageReader> iter = ImageIO.getImageReaders(iis);
+  Iterator<ImageReader> iter = ImageIO.getImageReaders(upload);
  
   if (!iter.hasNext()) {
  
@@ -37,7 +37,7 @@ throw new RuntimeException("No readers found!");
  
   // close stream
  
-  iis.close();
+  upload.close();
  
     }
  
