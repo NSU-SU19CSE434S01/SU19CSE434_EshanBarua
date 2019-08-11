@@ -16,6 +16,6 @@
 
 
 #Project 02
--[x] Setup selenium chrome webdriver for webtest.
--[x] Setup a website to test
+- [X] Setup selenium chrome webdriver for webtest.
+- [X] Setup a website to test.
 -[]
