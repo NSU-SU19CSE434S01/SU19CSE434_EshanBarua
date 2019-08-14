@@ -31,13 +31,7 @@ public class TestNavigation {
 	
 	public void navigate() {
 		
-		try {
-
-			
-		} catch (Exception e) { 
-			
-			e.printStackTrace();
-		}
+		
 	}
 	
 	public static void main(String[] args) {
