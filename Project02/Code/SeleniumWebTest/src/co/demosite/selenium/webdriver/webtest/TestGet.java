@@ -77,7 +77,20 @@ public class TestGet {
 			Thread.sleep(2000);
 			
 			
-		
+			driver.get("http://newtours.demoaut.com/mercuryunderconst.php");
+			
+			String titleOfThePage3 = driver.getTitle();
+			System.out.println("Title of the page is: " + titleOfThePage3);
+			
+			driver.findElement(By.linkText("SUPPORT")).click();
+			
+			String currentUrl3 = driver.getCurrentUrl();
+			System.out.println("The current URL is: " + currentUrl3 );
+			
+			//String currentPageSource1 = driver.getPageSource();
+			//System.out.println("The current page Source: "+ currentPageSource1 );
+			
+			Thread.sleep(2000);
 			
 			
 		}
