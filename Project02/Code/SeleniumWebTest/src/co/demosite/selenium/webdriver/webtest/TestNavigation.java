@@ -81,6 +81,24 @@ public class TestNavigation {
 			Thread.sleep(2000);
 			
 			
+
+			driver.navigate().to("http://newtours.demoaut.com/");
+			
+			driver.findElement(By.linkText("Cruises")).click();
+			Thread.sleep(2000);
+
+			
+			driver.navigate().back();
+			Thread.sleep(2000);
+			
+			driver.navigate().forward();
+			Thread.sleep(2000);
+	
+			driver.navigate().refresh();
+			Thread.sleep(2000);
+			
+			driver.navigate().to("http://newtours.demoaut.com/");
+			
 			
 			driver.close();
 		
