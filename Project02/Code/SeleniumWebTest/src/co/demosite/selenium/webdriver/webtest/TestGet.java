@@ -109,7 +109,6 @@ public class TestGet {
 			Thread.sleep(2000);
 			
 			driver.close();
-			//driver.quit();
 				
 			
 		}
@@ -119,9 +118,9 @@ public class TestGet {
 	}
 	
 	public static void main(String[] args) {
-		TestGet myObj = new TestGet();
-		myObj.invokeBrowser();
-		
+		TestGet Obj = new TestGet();
+		Obj.invokeBrowser();
+		Obj.get();
 	}
 
 }

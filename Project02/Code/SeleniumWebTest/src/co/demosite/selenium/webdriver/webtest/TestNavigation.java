@@ -110,8 +110,9 @@ public class TestNavigation {
 	}
 	
 	public static void main(String[] args) {
-		TestNavigation myObj = new TestNavigation();
-		myObj.invokeBrowser();
+		TestNavigation Obj = new TestNavigation();
+		Obj.invokeBrowser();
+		Obj.navigate();
 		
 	}
 
