@@ -42,6 +42,37 @@ public class TestGet {
 			
 			//String currentPageSource = driver.getPageSource();
 			//System.out.println("The current page Source: "+ currentPageSource );
+			
+			Thread.sleep(2000);
+			
+			
+			driver.get("http://newtours.demoaut.com/mercurysignon.php");
+			String titleOfThePage1 = driver.getTitle();
+			System.out.println("Title of the page is: " + titleOfThePage1);
+			
+			driver.findElement(By.linkText("SIGN-ON")).click();
+			
+			String currentUrl1 = driver.getCurrentUrl();
+			System.out.println("The current URL is: " + currentUrl1 );
+			
+			//String currentPageSource = driver.getPageSource();
+			//System.out.println("The current page Source: "+ currentPageSource );
+			
+			Thread.sleep(2000);
+			
+			
+			driver.get("http://newtours.demoaut.com/mercuryregister.php");
+			
+			String titleOfThePage2 = driver.getTitle();
+			System.out.println("Title of the page is: " + titleOfThePage2);
+			
+			driver.findElement(By.linkText("REGISTER")).click();
+			
+			String currentUrl2 = driver.getCurrentUrl();
+			System.out.println("The current URL is: " + currentUrl2 );
+			
+			//String currentPageSource1 = driver.getPageSource();
+			//System.out.println("The current page Source: "+ currentPageSource1 );
 		} 
 		catch (Exception e) {
 			e.printStackTrace();
