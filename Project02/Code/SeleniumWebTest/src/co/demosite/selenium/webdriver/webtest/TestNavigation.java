@@ -32,6 +32,24 @@ public class TestNavigation {
 	public void navigate() {
 		
 		try {
+			
+			driver.navigate().to("http://newtours.demoaut.com/");
+			
+			driver.findElement(By.linkText("SIGN-ON")).click();
+			Thread.sleep(2000);
+
+			
+			driver.navigate().back();
+			Thread.sleep(2000);
+	
+			driver.navigate().refresh();
+			Thread.sleep(2000);
+			
+			driver.navigate().forward();
+			Thread.sleep(2000);
+			
+			
+			driver.close();
 
 		
 		} catch (Exception e) { 
