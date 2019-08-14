@@ -55,8 +55,8 @@ public class TestGet {
 			String currentUrl1 = driver.getCurrentUrl();
 			System.out.println("The current URL is: " + currentUrl1 );
 			
-			//String currentPageSource = driver.getPageSource();
-			//System.out.println("The current page Source: "+ currentPageSource );
+			//String currentPageSource1 = driver.getPageSource();
+			//System.out.println("The current page Source: "+ currentPageSource1 );
 			
 			Thread.sleep(2000);
 			
@@ -71,8 +71,8 @@ public class TestGet {
 			String currentUrl2 = driver.getCurrentUrl();
 			System.out.println("The current URL is: " + currentUrl2 );
 			
-			//String currentPageSource1 = driver.getPageSource();
-			//System.out.println("The current page Source: "+ currentPageSource1 );
+			//String currentPageSource2 = driver.getPageSource();
+			//System.out.println("The current page Source: "+ currentPageSource2 );
 			
 			Thread.sleep(2000);
 			
@@ -87,11 +87,27 @@ public class TestGet {
 			String currentUrl3 = driver.getCurrentUrl();
 			System.out.println("The current URL is: " + currentUrl3 );
 			
-			//String currentPageSource1 = driver.getPageSource();
-			//System.out.println("The current page Source: "+ currentPageSource1 );
+			//String currentPageSource3 = driver.getPageSource();
+			//System.out.println("The current page Source: "+ currentPageSource3 );
 			
 			Thread.sleep(2000);
 			
+			
+			driver.get("http://newtours.demoaut.com/mercurycruise.php");
+			
+			String titleOfThePage4 = driver.getTitle();
+			System.out.println("Title of the page is: " + titleOfThePage4);
+			
+			driver.findElement(By.linkText("Cruises")).click();
+			
+			String currentUrl4 = driver.getCurrentUrl();
+			System.out.println("The current URL is: " + currentUrl4 );
+			
+			//String currentPageSource4 = driver.getPageSource();
+			//System.out.println("The current page Source: "+ currentPageSource4 );
+			
+			Thread.sleep(2000);
+				
 			
 		}
 		catch (Exception e) {
