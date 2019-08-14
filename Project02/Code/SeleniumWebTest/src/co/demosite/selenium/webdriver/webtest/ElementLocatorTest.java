@@ -4,10 +4,12 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ElementLocatorTest {
 	
+private static final String First = null;
 WebDriver driver;
 	
 	public void invokeBrowser(String url){
@@ -98,8 +100,10 @@ WebDriver driver;
 			
 			
 			//Finding Flight
-	
-			driver.findElement(By.name("tripType")).click();
+			WebElement radio1 = driver.findElement(By.name("tripType"));
+			WebElement radio2 = driver.findElement(By.name("tripType"));
+
+			radio1.click();
 			Thread.sleep(1000);
 			
 			driver.findElement(By.name("passCount")).sendKeys("2");
@@ -123,7 +127,11 @@ WebDriver driver;
 			driver.findElement(By.name("toDay")).sendKeys("8");
 			Thread.sleep(1000);
 			
-			driver.findElement(By.name("servClass")).sendKeys("First");
+			WebElement radio3 = driver.findElement(By.name("servClass"));
+			WebElement radio4 = driver.findElement(By.name("servClass"));
+			WebElement radio5 = driver.findElement(By.name("servClass"));
+			
+			radio5.click();
 			Thread.sleep(1000);
 			
 			driver.findElement(By.name("airline")).sendKeys("Blue Skies Airlines");
@@ -144,8 +152,100 @@ WebDriver driver;
 			driver.findElement(By.name("reserveFlights")).click();
 			Thread.sleep(1000);
 			
-
+			
+			//Confirming Flights
+			
+			driver.findElement(By.name("passFirst0")).sendKeys("Eshan");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("passLast0")).sendKeys("Barua");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("pass.0.meal")).sendKeys("Bland");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("passFirst1")).sendKeys("Shuvo");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("passLast1")).sendKeys("Barua");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("pass.1.meal")).sendKeys("Bland");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("creditCard")).sendKeys("Visa");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("creditnumber")).sendKeys("12345");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("cc_exp_dt_mn")).sendKeys("09");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("cc_exp_dt_yr")).sendKeys("2010");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("cc_frst_name")).sendKeys("Eshan");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("cc_mid_name")).sendKeys("Barua");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("cc_last_name")).sendKeys("Shuvo");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("ticketLess")).click();
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("billAddress1")).sendKeys("Ahmedbag");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("billAddress2")).sendKeys("Bashabo");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("billCity")).sendKeys("Dhaka");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("billState")).sendKeys("Dhaka");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("billZip")).sendKeys("1214");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("billCountry")).sendKeys("BANGLADESH");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("ticketLess")).click();
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("delAddress1")).sendKeys("Ahmedbag");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("delAddress2")).sendKeys("Bashabo");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("delCity")).sendKeys("Dhaka");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("delState")).sendKeys("Dhaka");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("delZip")).sendKeys("1214");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("delCountry")).sendKeys("BANGLADESH");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.cssSelector("/images/forms/purchase.gif")).click();
+			Thread.sleep(1000);
+			
+			//logging out
+			
+			//home page
+			
+			
 			driver.close();
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
