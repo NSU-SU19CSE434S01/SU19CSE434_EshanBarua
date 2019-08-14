@@ -97,7 +97,7 @@ WebDriver driver;
 			Thread.sleep(1000);
 			
 			
-			//Booking Flight
+			//Finding Flight
 	
 			driver.findElement(By.name("tripType")).click();
 			Thread.sleep(1000);
@@ -132,6 +132,17 @@ WebDriver driver;
 			driver.findElement(By.name("findFlights")).click();
 			Thread.sleep(1000);
 			
+			
+			//Booking Flights
+			
+			driver.findElement(By.name("outFlight")).sendKeys("Blue Skies Airlines$361$271$7:10");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("inFlight")).sendKeys("Blue Skies Airlines$631$273$14:30");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("reserveFlights")).click();
+			Thread.sleep(1000);
 			
 
 			driver.close();
