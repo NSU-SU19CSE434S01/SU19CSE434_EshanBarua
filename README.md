@@ -18,4 +18,6 @@
 #Project 02
 - [X] Setup selenium chrome webdriver for webtest.
 - [X] Setup a website to test.
--[]
+- [X] Setup a test to get the pages titles and URLs.
+- [X] Setup a test to navigate from one page to another page.
+
