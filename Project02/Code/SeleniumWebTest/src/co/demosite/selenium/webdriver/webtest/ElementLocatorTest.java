@@ -28,6 +28,10 @@ WebDriver driver;
 		}
 	}
 	
+	public void closeBrowser() {
+		driver.close();
+	}
+	
 	public void ElementLocator() {
 		
 		try {
@@ -73,6 +77,19 @@ WebDriver driver;
 			Thread.sleep(2000);
 			
 			driver.findElement(By.name("register")).click();
+			Thread.sleep(2000);
+			
+			
+			driver.findElement(By.linkText("sign-in")).click();
+			Thread.sleep(2000);
+
+			driver.findElement(By.name("userName")).sendKeys("Eshan");
+			Thread.sleep(2000);
+			
+			driver.findElement(By.name("password")).sendKeys("1234");
+			Thread.sleep(2000);
+			
+			driver.findElement(By.name("login")).click();
 			Thread.sleep(2000);
 
 			driver.close();
