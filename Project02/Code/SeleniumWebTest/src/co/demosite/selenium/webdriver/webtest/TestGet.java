@@ -73,7 +73,14 @@ public class TestGet {
 			
 			//String currentPageSource1 = driver.getPageSource();
 			//System.out.println("The current page Source: "+ currentPageSource1 );
-		} 
+			
+			Thread.sleep(2000);
+			
+			
+		
+			
+			
+		}
 		catch (Exception e) {
 			e.printStackTrace();
 		}
