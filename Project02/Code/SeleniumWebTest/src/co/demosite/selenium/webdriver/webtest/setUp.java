@@ -2,12 +2,15 @@ package co.demosite.selenium.webdriver.webtest;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class setUp {
 	
 	WebDriver driver;
+	JavascriptExecutor jse;
 	
 	public void invokeBrowser() {
 		
@@ -21,7 +24,8 @@ public class setUp {
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 			
-			driver.get("http://thedemosite.co.uk/");
+			driver.get("http://newtours.demoaut.com/");
+			khujo();
 		} 
 		catch (Exception e) {
 			
@@ -29,6 +33,24 @@ public class setUp {
 		}
 		
 	}
+	
+	public void khujo(){
+		
+		try {
+			
+			driver.findElement(By.id("button")).sendKeys("java");		
+			Thread.sleep(3000);
+			driver.findElement(By.id("serach-button")).click();	
+			jse = (JavascriptExecutor)driver;
+			jse.executeScript("scroll(0, 800)");
+			driver.findElement(By.xpath("//label[contains(text(), 'weekend')]")).click();
+			
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+
+		}
+		
 	
 	public static void main(String[] args) {
 		setUp Obj = new setUp();
