@@ -107,6 +107,9 @@ public class TestGet {
 			//System.out.println("The current page Source: "+ currentPageSource4 );
 			
 			Thread.sleep(2000);
+			
+			driver.close();
+			//driver.quit();
 				
 			
 		}
