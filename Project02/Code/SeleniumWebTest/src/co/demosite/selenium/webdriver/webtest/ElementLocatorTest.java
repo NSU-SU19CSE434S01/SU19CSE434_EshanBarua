@@ -35,62 +35,104 @@ WebDriver driver;
 	public void ElementLocator() {
 		
 		try {
+			
+			//Registration
+			
 			invokeBrowser("http://newtours.demoaut.com/mercuryregister.php");
 			
 			driver.findElement(By.name("firstName")).sendKeys("Eshan");
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			
 			driver.findElement(By.name("lastName")).sendKeys("Barua");
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 
 			driver.findElement(By.name("phone")).sendKeys("01883165981");
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 
 			driver.findElement(By.name("userName")).sendKeys("Eshan");
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			
 			driver.findElement(By.name("address1")).sendKeys("125, Ahmedbag");
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 
 			driver.findElement(By.name("address2")).sendKeys("Bashabo");
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 
 			driver.findElement(By.name("city")).sendKeys("Dhaka");
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 
 			driver.findElement(By.name("state")).sendKeys("Dhaka");
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 
 			driver.findElement(By.name("postalCode")).sendKeys("1214");
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 
 			driver.findElement(By.name("country")).sendKeys("BANGLADESH");
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			
 			driver.findElement(By.name("email")).sendKeys("Eshan");
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 
 			driver.findElement(By.name("password")).sendKeys("1234");
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			
 			driver.findElement(By.name("confirmPassword")).sendKeys("1234");
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			
 			driver.findElement(By.name("register")).click();
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			
+			//LogIn
 			
 			driver.findElement(By.linkText("sign-in")).click();
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 
 			driver.findElement(By.name("userName")).sendKeys("Eshan");
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			
 			driver.findElement(By.name("password")).sendKeys("1234");
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			
 			driver.findElement(By.name("login")).click();
-			Thread.sleep(2000);
+			Thread.sleep(1000);
+			
+			
+			//Booking Flight
+	
+			driver.findElement(By.name("tripType")).click();
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("passCount")).sendKeys("2");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("fromPort")).sendKeys("Paris");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("fromMonth")).sendKeys("August");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("fromDay")).sendKeys("29");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("toPort")).sendKeys("London");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("toMonth")).sendKeys("November");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("toDay")).sendKeys("8");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("servClass")).sendKeys("First");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("airline")).sendKeys("Blue Skies Airlines");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("findFlights")).click();
+			Thread.sleep(1000);
+			
+			
 
 			driver.close();
 		} catch (Exception e) {
