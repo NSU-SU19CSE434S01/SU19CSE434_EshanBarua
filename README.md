@@ -20,4 +20,7 @@
 - [X] Setup a website to test.
 - [X] Setup a test to get the pages titles and URLs.
 - [X] Setup a test to navigate from one page to another page.
+- [X] Setup a test Registration then Log in then Book tickets.
+- [X] Setup a test to login in from home page then change or update flight tickets.
+- [X] Setup a test to login then update user profile information.
 
