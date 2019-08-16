@@ -55,6 +55,39 @@ public class TestProfile {
 			
 			driver.findElement(By.linkText("PROFILE")).click();
 			
+			driver.findElement(By.name("firstName")).sendKeys("Eshan");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("lastName")).sendKeys("Barua");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("phone")).sendKeys("01883165981");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("email")).sendKeys("eshan283@northsouth.edu");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("address1")).sendKeys("125, Ahmedbag");
+			Thread.sleep(1000);
+
+			driver.findElement(By.name("address2")).sendKeys("Bashabo");
+			Thread.sleep(1000);
+
+			driver.findElement(By.name("city")).sendKeys("Dhaka");
+			Thread.sleep(1000);
+
+			driver.findElement(By.name("state")).sendKeys("Dhaka");
+			Thread.sleep(1000);
+
+			driver.findElement(By.name("postalCode")).sendKeys("1214");
+			Thread.sleep(1000);
+
+			driver.findElement(By.name("country")).sendKeys("BANGLADESH");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/table/tbody/tr[14]/td/a/img")).click();
+			Thread.sleep(1000);
+			
 			driver.close();
 			
 		} catch (Exception e) {
