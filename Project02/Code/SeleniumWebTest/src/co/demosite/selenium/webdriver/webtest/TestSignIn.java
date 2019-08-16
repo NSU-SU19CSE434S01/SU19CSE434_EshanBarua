@@ -2,7 +2,6 @@ package co.demosite.selenium.webdriver.webtest;
 
 	
 	import java.util.concurrent.TimeUnit;
-
 	import org.openqa.selenium.By;
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.chrome.ChromeDriver;
@@ -58,7 +57,7 @@ package co.demosite.selenium.webdriver.webtest;
 				Thread.sleep(1000);
 								
 				//cancel all reservation
-				driver.findElement(By.linkText("Map")).click();
+				driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/map/area")).click();
 				Thread.sleep(1000);
 				
 				driver.close();
