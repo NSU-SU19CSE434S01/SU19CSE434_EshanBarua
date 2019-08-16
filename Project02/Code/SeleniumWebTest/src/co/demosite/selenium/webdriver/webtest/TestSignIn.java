@@ -50,7 +50,17 @@ package co.demosite.selenium.webdriver.webtest;
 				
 				driver.findElement(By.name("login")).click();
 				Thread.sleep(1000);
-	
+				
+				
+				//ITINERARY
+				
+				driver.findElement(By.linkText("ITINERARY")).click();
+				Thread.sleep(1000);
+								
+				//cancel all reservation
+				driver.findElement(By.linkText("Map")).click();
+				Thread.sleep(1000);
+				
 				driver.close();
 				
 			} catch (Exception e) {
