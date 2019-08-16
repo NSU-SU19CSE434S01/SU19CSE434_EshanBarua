@@ -218,32 +218,6 @@ WebDriver driver;
 			driver.findElement(By.name("ticketLess")).click();
 			Thread.sleep(1000);
 			
-			driver.findElement(By.name("delAddress1")).sendKeys("Ahmedbag");
-			Thread.sleep(1000);
-			
-			driver.findElement(By.name("delAddress2")).sendKeys("Bashabo");
-			Thread.sleep(1000);
-			
-			driver.findElement(By.name("delCity")).sendKeys("Dhaka");
-			Thread.sleep(1000);
-			
-			driver.findElement(By.name("delState")).sendKeys("Dhaka");
-			Thread.sleep(1000);
-			
-			driver.findElement(By.name("delZip")).sendKeys("1214");
-			Thread.sleep(1000);
-			
-			driver.findElement(By.name("delCountry")).sendKeys("BANGLADESH");
-			Thread.sleep(1000);
-			
-			driver.findElement(By.cssSelector("/images/forms/purchase.gif")).click();
-			Thread.sleep(1000);
-			
-			//logging out
-			
-			//home page
-			
-			
 			driver.close();
 			
 		} catch (Exception e) {
