@@ -3,6 +3,7 @@ package co.demosite.selenium.webdriver.webtest;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.By.ByXPath;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -80,7 +81,7 @@ WebDriver driver;
 			driver.findElement(By.name("confirmPassword")).sendKeys("1234");
 			Thread.sleep(1000);
 			
-			driver.findElement(By.name("register")).click();
+			driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[18]/td/input")).click();
 			
 			//LogIn
 			
@@ -93,15 +94,12 @@ WebDriver driver;
 			driver.findElement(By.name("password")).sendKeys("1234");
 			Thread.sleep(1000);
 			
-			driver.findElement(By.name("login")).click();
+			driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[4]/td/input")).click();
 			Thread.sleep(1000);
 			
 			
 			//Finding Flight
-			WebElement radio1 = (WebElement) driver.findElements(By.name("tripType"));
-			WebElement radio2 = (WebElement) driver.findElements(By.name("tripType"));
-
-			radio1.click();
+			driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[2]/td[2]/b/font/input[1]")).click();
 			Thread.sleep(1000);
 			
 			driver.findElement(By.name("passCount")).sendKeys("2");
@@ -125,11 +123,7 @@ WebDriver driver;
 			driver.findElement(By.name("toDay")).sendKeys("8");
 			Thread.sleep(1000);
 			
-			WebElement radio3 = (WebElement) driver.findElements(By.name("servClass"));
-			WebElement radio4 = (WebElement) driver.findElements(By.name("servClass"));
-			WebElement radio5 = (WebElement) driver.findElements(By.name("servClass"));
-			
-			radio5.click();
+			driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[9]/td[2]/font/font/input[2]")).click();
 			Thread.sleep(1000);
 			
 			driver.findElement(By.name("airline")).sendKeys("Blue Skies Airlines");
@@ -141,13 +135,13 @@ WebDriver driver;
 			
 			//Booking Flights
 			
-			driver.findElement(By.name("outFlight")).sendKeys("Blue Skies Airlines$361$271$7:10");
+			driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table[1]/tbody/tr[5]/td[1]/input")).click();
 			Thread.sleep(1000);
 			
-			driver.findElement(By.name("inFlight")).sendKeys("Blue Skies Airlines$631$273$14:30");
+			driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table[2]/tbody/tr[5]/td[1]/input")).click();
 			Thread.sleep(1000);
 			
-			driver.findElement(By.name("reserveFlights")).click();
+			driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/p/input")).click();
 			Thread.sleep(1000);
 			
 			
@@ -193,6 +187,7 @@ WebDriver driver;
 			Thread.sleep(1000);
 			
 			
+			//Billing Address
 			
 			driver.findElement(By.name("ticketLess")).click();
 			Thread.sleep(1000);
@@ -201,9 +196,6 @@ WebDriver driver;
 			Thread.sleep(1000);
 			
 			driver.findElement(By.name("billAddress1")).sendKeys("Ahmedbag");
-			Thread.sleep(1000);
-			
-			driver.findElement(By.name("billAddress2")).clear();
 			Thread.sleep(1000);
 			
 			driver.findElement(By.name("billAddress2")).sendKeys("Bashabo");
@@ -215,7 +207,13 @@ WebDriver driver;
 			driver.findElement(By.name("billCity")).sendKeys("Dhaka");
 			Thread.sleep(1000);
 			
+			driver.findElement(By.name("billState")).clear();
+			Thread.sleep(1000);
+			
 			driver.findElement(By.name("billState")).sendKeys("Dhaka");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("billZip")).clear();
 			Thread.sleep(1000);
 			
 			driver.findElement(By.name("billZip")).sendKeys("1214");
@@ -224,17 +222,31 @@ WebDriver driver;
 			driver.findElement(By.name("billCountry")).sendKeys("BANGLADESH");
 			Thread.sleep(1000);
 			
-				
+			
+			//Delivery Address
+			
+			driver.findElement(By.name("delAddress1")).clear();
+			Thread.sleep(1000);
+			
 			driver.findElement(By.name("delAddress1")).sendKeys("Ahmedbag");
 			Thread.sleep(1000);
 			
 			driver.findElement(By.name("delAddress2")).sendKeys("Bashabo");
 			Thread.sleep(1000);
 			
+			driver.findElement(By.name("delCity")).clear();
+			Thread.sleep(1000);
+			
 			driver.findElement(By.name("delCity")).sendKeys("Dhaka");
 			Thread.sleep(1000);
 			
+			driver.findElement(By.name("delState")).clear();
+			Thread.sleep(1000);
+			
 			driver.findElement(By.name("delState")).sendKeys("Dhaka");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("delZip")).clear();
 			Thread.sleep(1000);
 			
 			driver.findElement(By.name("delZip")).sendKeys("1214");
@@ -243,6 +255,33 @@ WebDriver driver;
 			driver.findElement(By.name("delCountry")).sendKeys("BANGLADESH");
 			Thread.sleep(1000);
 			
+			driver.switchTo().alert().accept();
+			Thread.sleep(1000);
+			
+			driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[23]/td/input")).click();
+			Thread.sleep(1000);
+			
+			
+			//Back to Flights
+			
+			driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr[1]/td[2]/table/tbody/tr[7]/td/table/tbody/tr/td[1]/a/img")).click();
+			Thread.sleep(1000);
+			
+			driver.navigate().to("http://newtours.demoaut.com/mercurypurchase2.php");
+			Thread.sleep(1000);
+			
+			//Back to home
+			
+			driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr[1]/td[2]/table/tbody/tr[7]/td/table/tbody/tr/td[2]/a/img")).click();
+			Thread.sleep(1000);
+			
+			driver.navigate().to("http://newtours.demoaut.com/mercurypurchase2.php");
+			Thread.sleep(1000);
+			
+			//Log out
+			
+			driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr[1]/td[2]/table/tbody/tr[7]/td/table/tbody/tr/td[3]/a/img")).click();
+			Thread.sleep(1000);
 			
 			
 			driver.close();
