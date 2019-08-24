@@ -343,6 +343,20 @@ public class webTest {
 	
   }
   
+  @Test(dependsOnMethods = {"signIn"})
+  public void cancelReservation(){
+	  
+	  	try {
+	  		
+	  		driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/map/area")).click();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	
+  }
+  
+
   
   @AfterTest
   public void after() {

@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Eshan\AppData\Local\Temp\testng-eclipse-604836212\testng-customsuite.xml</span>
+                    <span>C:\Users\Eshan\AppData\Local\Temp\testng-eclipse-1567538135\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">10 methods,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,6 +108,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testNG.webTest" hash-for-method="bookingFlights">bookingFlights</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testNG.webTest" hash-for-method="cancelReservation">cancelReservation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -140,6 +145,11 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testNG.webTest" hash-for-method="registration">registration</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testNG.webTest" hash-for-method="signIn">signIn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
@@ -170,6 +180,13 @@
                   <a name="bookingFlights">
                   </a> <!-- bookingFlights -->
                   <span class="method-name">bookingFlights</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="cancelReservation">
+                  </a> <!-- cancelReservation -->
+                  <span class="method-name">cancelReservation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -214,12 +231,19 @@
                   <span class="method-name">registration</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signIn">
+                  </a> <!-- signIn -->
+                  <span class="method-name">signIn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Eshan\AppData\Local\Temp\testng-eclipse-604836212\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Eshan\AppData\Local\Temp\testng-eclipse-1567538135\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -268,44 +292,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'deliveryAddress')
+data.setCell(0, 1, 'signIn')
 data.setCell(0, 2, 'testNG.webTest')
-data.setCell(0, 3, 8033);
+data.setCell(0, 3, 32206);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'registration')
+data.setCell(1, 1, 'cancelReservation')
 data.setCell(1, 2, 'testNG.webTest')
-data.setCell(1, 3, 4388);
+data.setCell(1, 3, 30043);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'login')
+data.setCell(2, 1, 'registration')
 data.setCell(2, 2, 'testNG.webTest')
-data.setCell(2, 3, 3986);
+data.setCell(2, 3, 19498);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'logOut')
+data.setCell(3, 1, 'deliveryAddress')
 data.setCell(3, 2, 'testNG.webTest')
-data.setCell(3, 3, 2589);
+data.setCell(3, 3, 15326);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'findingFlights')
+data.setCell(4, 1, 'confirmingFlights')
 data.setCell(4, 2, 'testNG.webTest')
-data.setCell(4, 3, 1704);
+data.setCell(4, 3, 14348);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'bookingFlights')
+data.setCell(5, 1, 'findingFlights')
 data.setCell(5, 2, 'testNG.webTest')
-data.setCell(5, 3, 1668);
+data.setCell(5, 3, 12913);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'confirmingFlights')
+data.setCell(6, 1, 'billingAddress')
 data.setCell(6, 2, 'testNG.webTest')
-data.setCell(6, 3, 1311);
+data.setCell(6, 3, 12010);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'billingAddress')
+data.setCell(7, 1, 'login')
 data.setCell(7, 2, 'testNG.webTest')
-data.setCell(7, 3, 1031);
+data.setCell(7, 3, 9121);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'bookingFlights')
+data.setCell(8, 2, 'testNG.webTest')
+data.setCell(8, 3, 4907);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'logOut')
+data.setCell(9, 2, 'testNG.webTest')
+data.setCell(9, 3, 2279);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -338,39 +370,47 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">registration</span>
-                <span class="method-start">6998 ms</span>
+                <span class="method-start">7112 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">11396 ms</span>
+                <span class="method-start">26614 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">findingFlights</span>
-                <span class="method-start">15385 ms</span>
+                <span class="method-start">35737 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">bookingFlights</span>
-                <span class="method-start">17091 ms</span>
+                <span class="method-start">48651 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">confirmingFlights</span>
-                <span class="method-start">18761 ms</span>
+                <span class="method-start">53559 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">billingAddress</span>
-                <span class="method-start">20074 ms</span>
+                <span class="method-start">67908 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deliveryAddress</span>
-                <span class="method-start">21107 ms</span>
+                <span class="method-start">79921 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logOut</span>
-                <span class="method-start">29144 ms</span>
+                <span class="method-start">95250 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signIn</span>
+                <span class="method-start">97530 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">cancelReservation</span>
+                <span class="method-start">129739 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">after</span>
-                <span class="method-start">31734 ms</span>
+                <span class="method-start">159784 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

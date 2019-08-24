@@ -1,49 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31870" started-at="2019-08-24T21:11:00Z" finished-at="2019-08-24T21:11:32Z">
+  <suite name="Default suite" duration-ms="159961" started-at="2019-08-24T21:23:27Z" finished-at="2019-08-24T21:26:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31870" started-at="2019-08-24T21:11:00Z" finished-at="2019-08-24T21:11:32Z">
+    <test name="Default test" duration-ms="159961" started-at="2019-08-24T21:23:27Z" finished-at="2019-08-24T21:26:07Z">
       <class name="testNG.webTest">
-        <test-method status="PASS" signature="before()[pri:0, instance:testNG.webTest@46d56d67]" name="before" is-config="true" duration-ms="6977" started-at="2019-08-24T21:11:00Z" finished-at="2019-08-24T21:11:07Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:testNG.webTest@46d56d67]" name="before" is-config="true" duration-ms="7086" started-at="2019-08-24T21:23:27Z" finished-at="2019-08-24T21:23:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="registration()[pri:0, instance:testNG.webTest@46d56d67]" name="registration" duration-ms="4388" started-at="2019-08-24T21:11:07Z" finished-at="2019-08-24T21:11:11Z">
+        <test-method status="PASS" signature="registration()[pri:0, instance:testNG.webTest@46d56d67]" name="registration" duration-ms="19498" started-at="2019-08-24T21:23:34Z" finished-at="2019-08-24T21:23:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registration -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testNG.webTest@46d56d67]" name="login" duration-ms="3986" started-at="2019-08-24T21:11:11Z" depends-on-methods="testNG.webTest.registration" finished-at="2019-08-24T21:11:15Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:testNG.webTest@46d56d67]" name="login" duration-ms="9121" started-at="2019-08-24T21:23:54Z" depends-on-methods="testNG.webTest.registration" finished-at="2019-08-24T21:24:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="findingFlights()[pri:0, instance:testNG.webTest@46d56d67]" name="findingFlights" duration-ms="1704" started-at="2019-08-24T21:11:15Z" depends-on-methods="testNG.webTest.login" finished-at="2019-08-24T21:11:17Z">
+        <test-method status="PASS" signature="findingFlights()[pri:0, instance:testNG.webTest@46d56d67]" name="findingFlights" duration-ms="12913" started-at="2019-08-24T21:24:03Z" depends-on-methods="testNG.webTest.login" finished-at="2019-08-24T21:24:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findingFlights -->
-        <test-method status="PASS" signature="bookingFlights()[pri:0, instance:testNG.webTest@46d56d67]" name="bookingFlights" duration-ms="1668" started-at="2019-08-24T21:11:17Z" depends-on-methods="testNG.webTest.findingFlights" finished-at="2019-08-24T21:11:19Z">
+        <test-method status="PASS" signature="bookingFlights()[pri:0, instance:testNG.webTest@46d56d67]" name="bookingFlights" duration-ms="4907" started-at="2019-08-24T21:24:16Z" depends-on-methods="testNG.webTest.findingFlights" finished-at="2019-08-24T21:24:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bookingFlights -->
-        <test-method status="PASS" signature="confirmingFlights()[pri:0, instance:testNG.webTest@46d56d67]" name="confirmingFlights" duration-ms="1311" started-at="2019-08-24T21:11:19Z" depends-on-methods="testNG.webTest.bookingFlights" finished-at="2019-08-24T21:11:20Z">
+        <test-method status="PASS" signature="confirmingFlights()[pri:0, instance:testNG.webTest@46d56d67]" name="confirmingFlights" duration-ms="14348" started-at="2019-08-24T21:24:21Z" depends-on-methods="testNG.webTest.bookingFlights" finished-at="2019-08-24T21:24:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confirmingFlights -->
-        <test-method status="PASS" signature="billingAddress()[pri:0, instance:testNG.webTest@46d56d67]" name="billingAddress" duration-ms="1031" started-at="2019-08-24T21:11:20Z" depends-on-methods="testNG.webTest.confirmingFlights" finished-at="2019-08-24T21:11:21Z">
+        <test-method status="PASS" signature="billingAddress()[pri:0, instance:testNG.webTest@46d56d67]" name="billingAddress" duration-ms="12010" started-at="2019-08-24T21:24:35Z" depends-on-methods="testNG.webTest.confirmingFlights" finished-at="2019-08-24T21:24:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- billingAddress -->
-        <test-method status="PASS" signature="deliveryAddress()[pri:0, instance:testNG.webTest@46d56d67]" name="deliveryAddress" duration-ms="8033" started-at="2019-08-24T21:11:21Z" depends-on-methods="testNG.webTest.billingAddress" finished-at="2019-08-24T21:11:29Z">
+        <test-method status="PASS" signature="deliveryAddress()[pri:0, instance:testNG.webTest@46d56d67]" name="deliveryAddress" duration-ms="15326" started-at="2019-08-24T21:24:47Z" depends-on-methods="testNG.webTest.billingAddress" finished-at="2019-08-24T21:25:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deliveryAddress -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:testNG.webTest@46d56d67]" name="logOut" duration-ms="2589" started-at="2019-08-24T21:11:29Z" depends-on-methods="testNG.webTest.deliveryAddress" finished-at="2019-08-24T21:11:32Z">
+        <test-method status="PASS" signature="logOut()[pri:0, instance:testNG.webTest@46d56d67]" name="logOut" duration-ms="2279" started-at="2019-08-24T21:25:02Z" depends-on-methods="testNG.webTest.deliveryAddress" finished-at="2019-08-24T21:25:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testNG.webTest@46d56d67]" name="after" is-config="true" duration-ms="133" started-at="2019-08-24T21:11:32Z" finished-at="2019-08-24T21:11:32Z">
+        <test-method status="PASS" signature="signIn()[pri:0, instance:testNG.webTest@46d56d67]" name="signIn" duration-ms="32206" started-at="2019-08-24T21:25:05Z" depends-on-methods="testNG.webTest.logOut" finished-at="2019-08-24T21:25:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method status="PASS" signature="cancelReservation()[pri:0, instance:testNG.webTest@46d56d67]" name="cancelReservation" duration-ms="30043" started-at="2019-08-24T21:25:37Z" depends-on-methods="testNG.webTest.signIn" finished-at="2019-08-24T21:26:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelReservation -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testNG.webTest@46d56d67]" name="after" is-config="true" duration-ms="174" started-at="2019-08-24T21:26:07Z" finished-at="2019-08-24T21:26:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
