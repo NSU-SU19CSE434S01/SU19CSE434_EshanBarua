@@ -3,19 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.NavigationTest">
+      <class name="testNG.webTest">
         <methods>
-          <include name="bookingFlights"/>
-          <include name="openBrowser"/>
-          <include name="findingFlights"/>
-          <include name="afterAllTest"/>
-          <include name="deliveryAddress"/>
-          <include name="billingAddress"/>
           <include name="registration"/>
-          <include name="login"/>
-          <include name="beforeAnyTest"/>
+          <include name="before"/>
+          <include name="after"/>
         </methods>
-      </class> <!-- testNG.NavigationTest -->
+      </class> <!-- testNG.webTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
