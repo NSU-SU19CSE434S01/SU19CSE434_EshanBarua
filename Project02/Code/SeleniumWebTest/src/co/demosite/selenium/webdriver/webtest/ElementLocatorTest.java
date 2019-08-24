@@ -3,9 +3,7 @@ package co.demosite.selenium.webdriver.webtest;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.By.ByXPath;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ElementLocatorTest {
@@ -253,13 +251,12 @@ WebDriver driver;
 			Thread.sleep(1000);
 			
 			driver.findElement(By.name("delCountry")).sendKeys("BANGLADESH");
-			Thread.sleep(1000);
 			
-			driver.switchTo().alert().accept();
-			Thread.sleep(1000);
+			driver.switchTo().alert().accept();		
+			Thread.sleep(3000);
 			
-			driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[23]/td/input")).click();
-			Thread.sleep(1000);
+			driver.findElement(By.name("buyFlights")).click();
+			Thread.sleep(3000);
 			
 			
 			//Back to Flights
