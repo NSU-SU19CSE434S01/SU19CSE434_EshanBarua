@@ -67,6 +67,18 @@ public class webTest {
 		
   }
   
+  @Test(dependsOnMethods = {"registration"})
+  public void login(){
+		driver.findElement(By.linkText("sign-in")).click();
+
+		driver.findElement(By.name("userName")).sendKeys("Eshan");
+		
+		driver.findElement(By.name("password")).sendKeys("1234");
+		
+		driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[4]/td/input")).click();
+	  
+  }
+  
   @AfterTest
   public void after() {
 	  driver.close();
