@@ -5,7 +5,19 @@
     <classes>
       <class name="testNG.webTest">
         <methods>
+          <include name="logOut"/>
           <include name="registration"/>
+          <include name="billingAddress"/>
+          <include name="signin1"/>
+          <include name="cancelReservation"/>
+          <include name="editProfile"/>
+          <include name="signIn"/>
+          <include name="deliveryAddress"/>
+          <include name="login"/>
+          <include name="signOff"/>
+          <include name="findingFlights"/>
+          <include name="confirmingFlights"/>
+          <include name="bookingFlights"/>
           <include name="before"/>
           <include name="after"/>
         </methods>
