@@ -35,48 +35,56 @@ public class webTest {
   @Test
   public void registration() {
 	  	
-	  	driver.get("http://newtours.demoaut.com/mercuryregister.php");
-	  	
-		driver.findElement(By.name("firstName")).sendKeys("Eshan");
-		
-		driver.findElement(By.name("lastName")).sendKeys("Barua");
+	  	try {
+			driver.get("http://newtours.demoaut.com/mercuryregister.php");
+			
+			driver.findElement(By.name("firstName")).sendKeys("Eshan");
+			
+			driver.findElement(By.name("lastName")).sendKeys("Barua");
 
-		driver.findElement(By.name("phone")).sendKeys("01883165981");
+			driver.findElement(By.name("phone")).sendKeys("01883165981");
 
-		driver.findElement(By.name("userName")).sendKeys("Eshan");
-		
-		driver.findElement(By.name("address1")).sendKeys("125, Ahmedbag");
+			driver.findElement(By.name("userName")).sendKeys("Eshan");
+			
+			driver.findElement(By.name("address1")).sendKeys("125, Ahmedbag");
 
-		driver.findElement(By.name("address2")).sendKeys("Bashabo");
+			driver.findElement(By.name("address2")).sendKeys("Bashabo");
 
-		driver.findElement(By.name("city")).sendKeys("Dhaka");
+			driver.findElement(By.name("city")).sendKeys("Dhaka");
 
-		driver.findElement(By.name("state")).sendKeys("Dhaka");
+			driver.findElement(By.name("state")).sendKeys("Dhaka");
 
-		driver.findElement(By.name("postalCode")).sendKeys("1214");
+			driver.findElement(By.name("postalCode")).sendKeys("1214");
 
-		driver.findElement(By.name("country")).sendKeys("BANGLADESH");
-		
-		driver.findElement(By.name("email")).sendKeys("Eshan");
+			driver.findElement(By.name("country")).sendKeys("BANGLADESH");
+			
+			driver.findElement(By.name("email")).sendKeys("Eshan");
 
-		driver.findElement(By.name("password")).sendKeys("1234");
-		
-		driver.findElement(By.name("confirmPassword")).sendKeys("1234");
-		
-		driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[18]/td/input")).click();
+			driver.findElement(By.name("password")).sendKeys("1234");
+			
+			driver.findElement(By.name("confirmPassword")).sendKeys("1234");
+			
+			driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[18]/td/input")).click();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		
   }
   
   
   @Test(dependsOnMethods = {"registration"})
   public void login(){
-		driver.findElement(By.linkText("sign-in")).click();
+		try {
+			driver.findElement(By.linkText("sign-in")).click();
 
-		driver.findElement(By.name("userName")).sendKeys("Eshan");
-		
-		driver.findElement(By.name("password")).sendKeys("1234");
-		
-		driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[4]/td/input")).click();
+			driver.findElement(By.name("userName")).sendKeys("Eshan");
+			
+			driver.findElement(By.name("password")).sendKeys("1234");
+			
+			driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[4]/td/input")).click();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	  
   }
   
@@ -121,60 +129,105 @@ public class webTest {
   @Test(dependsOnMethods = {"bookingFlights"})
   public void confirmingFlights(){
 	  	
-	  	driver.findElement(By.name("passFirst0")).sendKeys("Eshan");
-		
-		driver.findElement(By.name("passLast0")).sendKeys("Barua");
-		
-		driver.findElement(By.name("pass.0.meal")).sendKeys("Bland");
-		
-		driver.findElement(By.name("passFirst1")).sendKeys("Shuvo");
-		
-		driver.findElement(By.name("passLast1")).sendKeys("Barua");
-		
-		driver.findElement(By.name("pass.1.meal")).sendKeys("Bland");
-		
-		driver.findElement(By.name("creditCard")).sendKeys("Visa");
-		
-		driver.findElement(By.name("creditnumber")).sendKeys("12345");
-		
-		driver.findElement(By.name("cc_exp_dt_mn")).sendKeys("09");
-		
-		driver.findElement(By.name("cc_exp_dt_yr")).sendKeys("2010");
-		
-		driver.findElement(By.name("cc_frst_name")).sendKeys("Eshan");
-		
-		driver.findElement(By.name("cc_mid_name")).sendKeys("Barua");
-		
-		driver.findElement(By.name("cc_last_name")).sendKeys("Shuvo");
+	  	try {
+			driver.findElement(By.name("passFirst0")).sendKeys("Eshan");
+			
+			driver.findElement(By.name("passLast0")).sendKeys("Barua");
+			
+			driver.findElement(By.name("pass.0.meal")).sendKeys("Bland");
+			
+			driver.findElement(By.name("passFirst1")).sendKeys("Shuvo");
+			
+			driver.findElement(By.name("passLast1")).sendKeys("Barua");
+			
+			driver.findElement(By.name("pass.1.meal")).sendKeys("Bland");
+			
+			driver.findElement(By.name("creditCard")).sendKeys("Visa");
+			
+			driver.findElement(By.name("creditnumber")).sendKeys("12345");
+			
+			driver.findElement(By.name("cc_exp_dt_mn")).sendKeys("09");
+			
+			driver.findElement(By.name("cc_exp_dt_yr")).sendKeys("2010");
+			
+			driver.findElement(By.name("cc_frst_name")).sendKeys("Eshan");
+			
+			driver.findElement(By.name("cc_mid_name")).sendKeys("Barua");
+			
+			driver.findElement(By.name("cc_last_name")).sendKeys("Shuvo");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		
   }
   
   @Test(dependsOnMethods = {"confirmingFlights"})
-  public void billingAddress (){
+  public void billingAddress(){
 	  
-	  	driver.findElement(By.name("ticketLess")).click();
-		
-		driver.findElement(By.name("billAddress1")).clear();
-		
-		driver.findElement(By.name("billAddress1")).sendKeys("Ahmedbag");
-		
-		driver.findElement(By.name("billAddress2")).sendKeys("Bashabo");
-		
-		driver.findElement(By.name("billCity")).clear();
-		
-		driver.findElement(By.name("billCity")).sendKeys("Dhaka");
-		
-		driver.findElement(By.name("billState")).clear();
-		
-		driver.findElement(By.name("billState")).sendKeys("Dhaka");
-		
-		driver.findElement(By.name("billZip")).clear();
-		
-		driver.findElement(By.name("billZip")).sendKeys("1214");
-		
-		driver.findElement(By.name("billCountry")).sendKeys("BANGLADESH");
+	  	try {
+			driver.findElement(By.name("ticketLess")).click();
+			
+			driver.findElement(By.name("billAddress1")).clear();
+			
+			driver.findElement(By.name("billAddress1")).sendKeys("Ahmedbag");
+			
+			driver.findElement(By.name("billAddress2")).sendKeys("Bashabo");
+			
+			driver.findElement(By.name("billCity")).clear();
+			
+			driver.findElement(By.name("billCity")).sendKeys("Dhaka");
+			
+			driver.findElement(By.name("billState")).clear();
+			
+			driver.findElement(By.name("billState")).sendKeys("Dhaka");
+			
+			driver.findElement(By.name("billZip")).clear();
+			
+			driver.findElement(By.name("billZip")).sendKeys("1214");
+			
+			driver.findElement(By.name("billCountry")).sendKeys("BANGLADESH");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	
   }
+  
+  
+  @Test(dependsOnMethods = {"billingAddress"})
+  public void deliveryAddress(){
+	  
+	  	try {
+			driver.findElement(By.name("delAddress1")).clear();
+			
+			driver.findElement(By.name("delAddress1")).sendKeys("Ahmedbag");
+			
+			driver.findElement(By.name("delAddress2")).sendKeys("Bashabo");
+			
+			driver.findElement(By.name("delCity")).clear();
+			
+			driver.findElement(By.name("delCity")).sendKeys("Dhaka");
+			
+			driver.findElement(By.name("delState")).clear();
+			
+			driver.findElement(By.name("delState")).sendKeys("Dhaka");
+			
+			driver.findElement(By.name("delZip")).clear();
+			
+			driver.findElement(By.name("delZip")).sendKeys("1214");
+			
+			driver.findElement(By.name("delCountry")).sendKeys("BANGLADESH");
+			
+			driver.switchTo().alert().accept();		
+			Thread.sleep(3000);
+			
+			driver.findElement(By.name("buyFlights")).click();
+			Thread.sleep(3000);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	
+  }
+
   
   @AfterTest
   public void after() {
