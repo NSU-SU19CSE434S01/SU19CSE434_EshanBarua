@@ -120,7 +120,8 @@ public class webTest {
   
   @Test(dependsOnMethods = {"bookingFlights"})
   public void confirmingFlights(){
-	  driver.findElement(By.name("passFirst0")).sendKeys("Eshan");
+	  	
+	  	driver.findElement(By.name("passFirst0")).sendKeys("Eshan");
 		
 		driver.findElement(By.name("passLast0")).sendKeys("Barua");
 		
@@ -148,8 +149,36 @@ public class webTest {
 		
   }
   
+  @Test(dependsOnMethods = {"confirmingFlights"})
+  public void billingAddress (){
+	  
+	  	driver.findElement(By.name("ticketLess")).click();
+		
+		driver.findElement(By.name("billAddress1")).clear();
+		
+		driver.findElement(By.name("billAddress1")).sendKeys("Ahmedbag");
+		
+		driver.findElement(By.name("billAddress2")).sendKeys("Bashabo");
+		
+		driver.findElement(By.name("billCity")).clear();
+		
+		driver.findElement(By.name("billCity")).sendKeys("Dhaka");
+		
+		driver.findElement(By.name("billState")).clear();
+		
+		driver.findElement(By.name("billState")).sendKeys("Dhaka");
+		
+		driver.findElement(By.name("billZip")).clear();
+		
+		driver.findElement(By.name("billZip")).sendKeys("1214");
+		
+		driver.findElement(By.name("billCountry")).sendKeys("BANGLADESH");
+	
+  }
+  
   @AfterTest
   public void after() {
+	 
 	  driver.close();
 }
 }
