@@ -356,7 +356,25 @@ public class webTest {
 	
   }
   
-
+  @Test(dependsOnMethods = {"cancelReservation"})
+  public void signIn1 (){
+	  
+	  	try {
+	  		
+	  		driver.findElement(By.name("userName")).sendKeys("Eshan");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("password")).sendKeys("1234");
+			Thread.sleep(1000);
+	  		
+	  		driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td[3]/form/table/tbody/tr[4]/td/table/tbody/tr[4]/td[2]/div/input\n")).click();
+			Thread.sleep(1000);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	
+  }
   
   @AfterTest
   public void after() {
