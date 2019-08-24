@@ -358,7 +358,6 @@ public class webTest {
   
   @Test(dependsOnMethods = {"cancelReservation"})
   public void signIn1 (){
-	  
 	  	try {
 	  		
 	  		driver.findElement(By.name("userName")).sendKeys("Eshan");
@@ -376,6 +375,55 @@ public class webTest {
 	
   }
   
+  @Test(dependsOnMethods = {"signin1"})
+  public void editProfile (){
+	  	try {
+	  		
+	  		//CONTACT INFORMATION
+	  		
+	  		driver.findElement(By.name("PROFILE")).click();
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("firstName")).sendKeys("Eshan");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("phone")).sendKeys("01883165981");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("email")).sendKeys("Eshan.barua@northsouth.edu");
+			Thread.sleep(1000);
+			
+			
+			//MAILING INFO
+			
+			driver.findElement(By.name("address1")).sendKeys("Ahmedbag");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("address2")).sendKeys("Bashabo");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("city")).sendKeys("Dhaka");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("state")).sendKeys("Dhaka");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("postalCode")).sendKeys("1214");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("country")).sendKeys("BANGLADESH");
+			Thread.sleep(1000);
+			
+	  		
+	  		driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/table/tbody/tr[14]/td/a/img")).click();
+			Thread.sleep(1000);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	
+  }
+
   @AfterTest
   public void after() {
 	 
