@@ -79,6 +79,33 @@ public class webTest {
 	  
   }
   
+
+  @Test(dependsOnMethods = {"login"})
+  public void findingFlights(){
+		driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[2]/td[2]/b/font/input[1]")).click();
+		
+		driver.findElement(By.name("passCount")).sendKeys("2");
+		
+		driver.findElement(By.name("fromPort")).sendKeys("Paris");
+		
+		driver.findElement(By.name("fromMonth")).sendKeys("August");
+		
+		driver.findElement(By.name("fromDay")).sendKeys("29");
+		
+		driver.findElement(By.name("toPort")).sendKeys("London");
+		
+		driver.findElement(By.name("toMonth")).sendKeys("November");
+		
+		driver.findElement(By.name("toDay")).sendKeys("8");
+		
+		driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[9]/td[2]/font/font/input[2]")).click();
+		
+		driver.findElement(By.name("airline")).sendKeys("Blue Skies Airlines");
+		
+		driver.findElement(By.name("findFlights")).click();
+  }
+  
+  
   @AfterTest
   public void after() {
 	  driver.close();
