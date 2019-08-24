@@ -67,6 +67,7 @@ public class webTest {
 		
   }
   
+  
   @Test(dependsOnMethods = {"registration"})
   public void login(){
 		driver.findElement(By.linkText("sign-in")).click();
@@ -103,6 +104,16 @@ public class webTest {
 		driver.findElement(By.name("airline")).sendKeys("Blue Skies Airlines");
 		
 		driver.findElement(By.name("findFlights")).click();
+  }
+  
+  
+  @Test(dependsOnMethods = {"findingFlights"})
+  public void bookingFlights(){
+		driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table[1]/tbody/tr[5]/td[1]/input")).click();
+		
+		driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table[2]/tbody/tr[5]/td[1]/input")).click();
+		
+		driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/p/input")).click();
   }
   
   
