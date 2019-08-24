@@ -117,6 +117,37 @@ public class webTest {
   }
   
   
+  
+  @Test(dependsOnMethods = {"bookingFlights"})
+  public void confirmingFlights(){
+	  driver.findElement(By.name("passFirst0")).sendKeys("Eshan");
+		
+		driver.findElement(By.name("passLast0")).sendKeys("Barua");
+		
+		driver.findElement(By.name("pass.0.meal")).sendKeys("Bland");
+		
+		driver.findElement(By.name("passFirst1")).sendKeys("Shuvo");
+		
+		driver.findElement(By.name("passLast1")).sendKeys("Barua");
+		
+		driver.findElement(By.name("pass.1.meal")).sendKeys("Bland");
+		
+		driver.findElement(By.name("creditCard")).sendKeys("Visa");
+		
+		driver.findElement(By.name("creditnumber")).sendKeys("12345");
+		
+		driver.findElement(By.name("cc_exp_dt_mn")).sendKeys("09");
+		
+		driver.findElement(By.name("cc_exp_dt_yr")).sendKeys("2010");
+		
+		driver.findElement(By.name("cc_frst_name")).sendKeys("Eshan");
+		
+		driver.findElement(By.name("cc_mid_name")).sendKeys("Barua");
+		
+		driver.findElement(By.name("cc_last_name")).sendKeys("Shuvo");
+		
+  }
+  
   @AfterTest
   public void after() {
 	  driver.close();
