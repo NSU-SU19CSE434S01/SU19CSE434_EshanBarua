@@ -424,6 +424,20 @@ public class webTest {
 	
   }
 
+  
+  @Test(dependsOnMethods = {"editProfile"})
+  public void signOff (){
+	  	try {
+	  		
+	  		driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[1]/a")).click();
+			Thread.sleep(1000);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	
+  }
+  
   @AfterTest
   public void after() {
 	 
