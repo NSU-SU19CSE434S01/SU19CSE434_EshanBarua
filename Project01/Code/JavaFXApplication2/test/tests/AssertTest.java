@@ -3,13 +3,17 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
- public class AssertTest {
+public class AssertTest{ 
+	
+	
+	
+public class Assert {
 	 
 	 String temp, str;
 	 int num;
 	 
 
- 	public static void manin (String[] args) {
+ 	public void manin (String[] args) {
 
  		Result result = JUnitCore.runClasses(AssertTestR.class);
 
@@ -25,3 +29,7 @@ import org.junit.runner.notification.Failure;
  	}
 
  }
+
+
+
+}
